@@ -1,0 +1,199 @@
+# RStudio
+
+## ❓Environnement de Développement Intégré
+
+<br>
+
+. . .
+
+Un IDE (*Integrated Development Environment*) contient :
+
+::: incremental
+-   Un éditeur de code
+
+-   Un terminal intégré
+
+-   Un gestionnaire de projets
+
+-   Des outils d'aide (auto-complétion, coloration syntaxique, ...)
+:::
+
+## ❓Environnement de Développement Intégré
+
+<br>
+
+![](img/r_intro_04.png){fig-align="center"}
+
+## R vs. RStudio
+
+<br>
+
+![](img/r_intro_05.png){fig-align="center"}
+
+Tiré de [Statistical Inference via Data Science](https://moderndive.com/v2/)
+
+## RStudio
+
+<br>
+
+![](img/r_intro_06a.png){fig-align="center"}
+
+## Panneaux et onglets
+
+<br>
+
+![](img/r_intro_06b.png){fig-align="center"}
+
+## Panneaux et onglets
+
+<br>
+
+![](img/r_intro_06c.png){fig-align="center"}
+
+## Panneaux et onglets
+
+<br>
+
+![](img/r_intro_06d.png){fig-align="center"}
+
+## Panneaux et onglets
+
+<br>
+
+![](img/r_intro_06e.png){fig-align="center"}
+
+## Panneaux et onglets
+
+<br>
+
+![](img/r_intro_06f.png){fig-align="center"}
+
+## Panneaux et onglets
+
+<br>
+
+![](img/r_intro_06g.png){fig-align="center"}
+
+## Panneaux et onglets
+
+<br>
+
+![](img/r_intro_06h.png){fig-align="center"}
+
+## Panneaux et onglets
+
+<br>
+
+![](img/r_intro_06i.png){fig-align="center"}
+
+## Panneaux et onglets
+
+<br>
+
+![](img/r_intro_06j.png){fig-align="center"}
+
+## Panneaux et onglets
+
+<br>
+
+![](img/r_intro_06k.png){fig-align="center"}
+
+## Panneaux et onglets
+
+<br>
+
+![](img/r_intro_06l.png){fig-align="center"}
+
+## Panneaux et onglets
+
+<br>
+
+![](img/r_intro_06m.png){fig-align="center"}
+
+## Panneaux et onglets
+
+<br>
+
+![](img/r_intro_06n.png){fig-align="center"}
+
+## 🫵Exécuter des commandes dans RStudio
+
+<br>
+
+Dans la console de RStudio, taper et exécuter les commandes suivantes (à l'aide de la touche `Entrée`) :
+
+```{r}
+#| eval: false
+1 + 1
+```
+
+<br>
+
+```{r}
+#| eval: false
+plot(anscombe)
+```
+
+## ✅Exécuter des commandes dans RStudio
+
+<br>
+
+![](img/r_intro_07.png){fig-align="center"}
+
+## 🫵Historique des commandes
+
+<br>
+
+Dans la **console** :
+
+-   Utiliser les flèches ⬆️ et ⬇️ pour naviguer dans l'historique des commande exécutées
+
+-   Exécuter la commande choisie à l'aide de la touche `Entrée`
+
+::: {.callout-tip icon="false"}
+#### ⌨️Vider la console
+
+`Ctrl` + `L`
+:::
+
+## 🫵Historique des commandes
+
+<br>
+
+À partir de l'onglet **History** :
+
+-   Sélectionner la commande désirée
+
+-   Cliquer sur `To Console`
+
+-   Exécuter la commande à l'aide de la touche `Entrée`
+
+## 🫵Historique des commandes
+
+<br>
+
+![](img/r_intro_08a.png){fig-align="center"}
+
+## ⚙️Paramètres de RStudio
+
+<br>
+
+**Tools ▶️ Global Options**
+
+![](img/r_intro_09a.png){fig-align="center"}
+
+## ⚙️Version de R
+
+<br>
+
+**Tools ▶️ Global Options ▶️ General**
+
+![](img/r_intro_09b.png){fig-align="center"}
+
+## ⚙️Thème
+
+<br>
+
+**Tools ▶️ Global Options ▶️ Appearance**
+
+![](img/r_intro_09c.png){fig-align="center"}

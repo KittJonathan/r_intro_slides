@@ -1,0 +1,84 @@
+# Introduction
+
+## Qu'est-ce que R ? {#r_def}
+
+<br>
+
+::: notes
+En 1992, deux statisticiens de l'Université d'Auckland (Australie), Ross Ihaka et Robert Gentleman, créent R comme implémentation open-source du langage S (datant des années 1970).
+
+Leur travail est publié en 1996 dans le *Journal of Computational and Graphical Statistics*
+
+Depuis sa création, R a largement gagné en popularité, dans le domaine de la statistique et de la visualisation de données. Il est aujourd'hui 2^ème^ après le langage Python.
+:::
+
+::: incremental
+-   Un **langage de programmation** développé dans les années 1990.
+-   Le **logiciel** qui utilise ce langage (calculs statistiques, figures, ...)
+:::
+
+. . .
+
+![](img/r_intro_01.png){fig-align="center"}
+
+## **Avantages** et inconvénients de R
+
+<br>
+
+. . .
+
+🟢 Spécialisé pour les statistiques et les données
+
+. . .
+
+🟢 Large palette d'extensions
+
+. . .
+
+🟢 Excellentes capacités de visualisation
+
+. . .
+
+🟢 Communauté active
+
+. . .
+
+🟢 Intégration avec d'autres outils
+
+. . .
+
+🟢 Open source
+
+## Avantages et **inconvénients** de R
+
+<br>
+
+. . .
+
+🔴 Courbe d'apprentissage
+
+. . .
+
+🔴 Performances
+
+. . .
+
+🔴 Moins adapté à la programmation orientée objet
+
+. . .
+
+🔴 Moins adapté aux applications de production
+
+. . .
+
+🔴 Gestion des erreurs
+
+. . .
+
+🔴 Interopérabilité limitée
+
+## Avantages et inconvénients de R
+
+<br>
+
+> ***R est un excellent langage pour l'analyse statistique et la visualisation de données, mais présente des limitations lorsqu'il s'agit de performances ou de développement d'applications de grande échelle.***

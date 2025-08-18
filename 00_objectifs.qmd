@@ -1,0 +1,49 @@
+## 🎯Objectifs
+
+<br>
+
+. . .
+
+**1) Découvrir les bases de R et RStudio**
+
+::: incremental
+-   types et structures de données
+
+-   importer, explorer, manipuler, exporter des données
+
+-   prise en main de RStudio
+:::
+
+. . .
+
+**2) Mettre en oeuvre les bonnes pratiques de code**
+
+::: incremental
+-   organiser son travail dans un projet
+
+-   sauvegarder le code dans un script
+:::
+
+## ℹ️ À savoir
+
+<br>
+
+. . .
+
+❓ Concept, définition
+
+. . .
+
+🫵 Mise en pratique
+
+. . .
+
+✅ Solution
+
+. . .
+
+⚙️ Paramètres, options
+
+. . .
+
+⌨️ Raccourci clavier

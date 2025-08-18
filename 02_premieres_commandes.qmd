@@ -1,0 +1,157 @@
+# Premières commandes
+
+## ❓Interface Graphique Utilisateur
+
+<br>
+
+![](img/r_intro_02a.png){fig-align="center"}
+
+## ❓Interface Graphique Utilisateur
+
+<br>
+
+![](img/r_intro_02b.png){fig-align="center"}
+
+## ❓Interface Graphique Utilisateur
+
+<br>
+
+![](img/r_intro_02c.png){fig-align="center"}
+
+## ❓Interface Graphique Utilisateur
+
+<br>
+
+![](img/r_intro_02d.png){fig-align="center"}
+
+## ❓Interface Graphique Utilisateur
+
+<br>
+
+![](img/r_intro_02e.png){fig-align="center"}
+
+## 🫵Premières commandes - calculs
+
+<br>
+
+-   Ouvrir l'Interface Graphique Utilisateur de R
+
+-   Dans la console, taper les commandes suivantes à la suite de l'invite de commande, et les exécuter à l'aide de la touche `Entrée` :
+
+```{r}
+#| eval: false
+5 + 2
+5 - 2
+5 * 2
+5 / 2
+5 %/% 2
+5 %% 2
+exp(0)
+log(1)
+sin(pi / 2)
+```
+
+## ✅Premières commandes - calculs
+
+<br>
+
+. . .
+
+```{r}
+#| output-location: fragment
+5 + 2
+```
+
+. . .
+
+```{r}
+#| output-location: fragment
+5 - 2
+```
+
+. . .
+
+```{r}
+#| output-location: fragment
+5 * 2
+```
+
+## ✅Premières commandes - calculs
+
+<br>
+
+. . .
+
+Division
+
+```{r}
+#| output-location: fragment
+5 / 2
+```
+
+. . .
+
+Quotient
+
+```{r}
+#| output-location: fragment
+5 %/% 2
+```
+
+. . .
+
+Reste (opérateur *modulo*)
+
+```{r}
+#| output-location: fragment
+5 %% 2
+```
+
+## ✅Premières commandes - calculs
+
+<br>
+
+. . .
+
+```{r}
+#| output-location: fragment
+exp(0)
+```
+
+. . .
+
+```{r}
+#| output-location: fragment
+log(1)
+```
+
+. . .
+
+```{r}
+#| output-location: fragment
+sin(pi / 2)
+```
+
+## 🫵Premières commandes - figures
+
+<br>
+
+Exécuter la commande suivante :
+
+```{r}
+#| eval: false
+plot(anscombe)
+```
+
+## ✅Premières commandes - figures
+
+<br>
+
+```{r}
+#| eval: false
+plot(anscombe)
+```
+
+. . .
+
+![](img/r_intro_03.png){fig-align="center" width="45%"}

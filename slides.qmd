@@ -1,0 +1,39 @@
+---
+title: Initiation à R
+subtitle: Premiers pas avec R et RStudio
+execute: 
+  echo: true
+  eval: true
+format: 
+  clean-revealjs:
+  # inrae-revealjs:
+    slide-number: true
+    show-slide-number: all
+    mouse-wheel: true
+    transition: none
+editor: visual
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: Jonathan Kitt
+    orcid: 0000-0002-3817-4538
+    email: jonathan.kitt@inrae.fr
+    affiliations: Génétique, Diversité et Ecophysiologie des Céréales 
+# date: last-modified
+---
+
+```{r}
+#| echo: false
+#| include: false
+# install.packages("countdown")
+# library(countdown)
+```
+
+{{< include "00_objectifs.qmd" >}}
+
+{{< include "01_introduction.qmd" >}}
+
+{{< include "02_premieres_commandes.qmd" >}}
+
+{{< include "03_rstudio.qmd" >}}
