@@ -1,0 +1,257 @@
+# Organiser son travail
+
+## Le workflow en Data Science
+
+<br>
+
+![](img/r_intro_10.png){fig-align="center"}
+
+Adapté du livre [R for Data Science (2ed)](https://r4ds.hadley.nz/)
+
+## ❓Projet
+
+<br>
+
+Travailler dans un projet présente plusieurs avantages :
+
+🟢 Organisation et structure : regrouper scripts, données, résultats, figures, rapports
+
+🟢 Gestion simplifiée du répertoire de travail
+
+🟢 Reproductibilité
+
+🟢 Environnement de travail isolé
+
+🟢 Intégration avec git
+
+## 🫵Créer un nouveau projet
+
+<br>
+
+-   File ▶️ New Project ▶️ New Directory ▶️ New Project
+
+-   Choisir un nom de projet (ex : *formation_r*)
+
+-   Définir l'emplacement du projet (ex : *C:/Users/user*)
+
+-   Cliquer sur `Create Project`
+
+## ✅Créer un nouveau projet
+
+<br>
+
+![](img/r_intro_11a.png){fig-align="center"}
+
+## ✅Créer un nouveau projet
+
+<br>
+
+![](img/r_intro_11b.png){fig-align="center"}
+
+## ✅Créer un nouveau projet
+
+<br>
+
+![](img/r_intro_11c.png){fig-align="center"}
+
+## ✅Créer un nouveau projet
+
+<br>
+
+![](img/r_intro_11d.png){fig-align="center"}
+
+## Nouveau projet
+
+<br>
+
+![](img/r_intro_11e.png){fig-align="center"}
+
+## 🫵Ouvrir un projet
+
+<br>
+
+![](img/r_intro_11f.png){fig-align="center"}
+
+## 🫵Ouvrir un projet
+
+<br>
+
+![](img/r_intro_11g.png){fig-align="center"}
+
+## 🫵Ouvrir un projet
+
+<br>
+
+![](img/r_intro_11h.png){fig-align="center"}
+
+## 🫵Ouvrir un projet
+
+<br>
+
+![](img/r_intro_11i.png){fig-align="center"}
+
+## ❓Répertoire de travail (courant)
+
+<br>
+
+Dossier (répertoire) dans lequel on se trouve.
+
+-   *(Current) working directory*
+
+-   Deux commandes : `getwd()` pour afficher le répertoire de travail et `setwd(dir = "...")` pour définir manuellement le répertoire de travail
+
+-   Dans un projet, le répertoire de travail est situé à la racine du projet
+
+## 🫵Répertoire de travail
+
+<br>
+
+-   Dans la console, taper et exécuter la commande `getwd()`
+
+-   Dans l'onglet `Files`, placez-vous à un autre endroit que le répertoire de travail
+
+-   Revenez dans le répertoire de travail : `⚙️More` ▶️ `Go To Working Directory`
+
+-   Dans l'onglet `Files`, définissez le répertoire de travail : `⚙️More` ▶️ `Set As Working Directory`
+
+## ✅Répertoire de travail
+
+<br>
+
+![](img/r_intro_11j.png){fig-align="center"}
+
+## Arborescence
+
+<br>
+
+-   Utilisable pour l'ensemble des projets (la plus logique possible)
+
+-   Syntaxe cohérente pour les noms de dossiers
+
+<br>
+
+## 🫵Arborescence
+
+<br>
+
+-   à l'intérieur d'un explorateur de fichiers
+
+-   dans l'onglet `Files` :
+
+![](img/r_intro_11k.png){fig-align="center"}
+
+## 🫵Arborescence
+
+<br>
+
+Exemples d'arborescence (à adapter selon vos besoins) :
+
+![](img/r_intro_11l.png){fig-align="center"}
+
+## ✅Arborescence
+
+<br>
+
+![](img/r_intro_11m.png){fig-align="center"}
+
+## ❓Script
+
+<br>
+
+Document texte contenant du code ... mais pas uniquement !
+
+🟢 Modifier et sauvegarder le code
+
+🟢 Structurer et documenter le code
+
+🟢 Exécuter des portions de code
+
+🟢 Identifier et résoudre les erreurs
+
+🟢 Partager le code (reproductibilité)
+
+## 🫵Créer un nouveau script
+
+<br>
+
+![](img/r_intro_11n.png){fig-align="center"}
+
+## 🫵Créer un nouveau script
+
+<br>
+
+![](img/r_intro_11o.png){fig-align="center"}
+
+## 🫵Créer un nouveau script
+
+<br>
+
+![](img/r_intro_11p.png){fig-align="center"}
+
+## ✅Créer un nouveau script
+
+<br>
+
+![](img/r_intro_11q.png){fig-align="center"}
+
+## ❓Les commentaires
+
+<br>
+
+Les lignes de code débutant par un **`#`** ne sont pas exécutées : on parle de commentaires.
+
+-   ajouter un en-tête au script
+
+-   documenter le code ("pourquoi" plutôt que "comment")
+
+-   inactiver une ligne de code ou des blocs de code (résolution de bugs)
+
+::: {.callout-tip icon="false"}
+#### ⌨️Ajouter ou supprimer un commentaire
+
+`Ctrl` + `Shift` + `C`
+:::
+
+## 🫵Documenter un script
+
+<br>
+
+En haut du script, indiquer les informations suivantes à l'aide de commentaires (`#`) :
+
+-   le rôle du script
+
+-   l'auteur du script (vous)
+
+-   la date
+
+## ✅Documenter un script
+
+<br>
+
+![](img/r_intro_11r.png){fig-align="center"}
+
+## 🫵Sauvegarder un script
+
+<br>
+
+![](img/r_intro_11s.png){fig-align="center"}
+
+## 🫵Sauvegarder un script
+
+<br>
+
+![](img/r_intro_11t.png){fig-align="center"}
+
+## ✅Sauvegarder un script
+
+<br>
+
+![](img/r_intro_11u.png){fig-align="center"}
+
+## ⚙️Disposition et contenu des panneaux
+
+<br>
+
+**Tools ▶️ Global Options ▶️ Pane Layout**
+
+![](img/r_intro_11v.png){fig-align="center"}

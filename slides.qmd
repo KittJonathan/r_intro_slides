@@ -37,3 +37,7 @@ author:
 {{< include "02_premieres_commandes.qmd" >}}
 
 {{< include "03_rstudio.qmd" >}}
+
+{{< include "04_organisation.qmd" >}}
+
+{{< include "05_importer.qmd" >}}
