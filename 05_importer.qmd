@@ -1,1 +1,503 @@
 # Importer des données
+
+## Le jeu de données
+
+<br>
+
+![](img/r_intro_12a.png){fig-align="center"}
+
+[PLOS One](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0090081)
+
+## Le jeu de données
+
+<br>
+
+![](img/r_intro_12b.png){fig-align="center"}
+
+[PLOS One](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0090081)
+
+## 🫵Télécharger les données
+
+<br>
+
+-   [Télécharger le jeu de données](https://raw.githubusercontent.com/allisonhorst/palmerpenguins/refs/heads/main/inst/extdata/penguins.csv)
+
+-   Sauvegarder le fichier dans le dossier approprié
+
+💡Depuis la version 4.5.0, ce jeu de données est inclus dans R (avec des différences dans les noms de certaines variables)
+
+## ✅Télécharger les données
+
+<br>
+
+![](img/r_intro_12c.png){fig-align="center"}
+
+## 🫵Importer les données
+
+<br>
+
+![](img/r_intro_12d.png){fig-align="center"}
+
+## 🫵Importer les données
+
+<br>
+
+![](img/r_intro_12e.png){fig-align="center"}
+
+## 🫵Importer les données
+
+<br>
+
+![](img/r_intro_12f.png){fig-align="center"}
+
+## 🫵Importer les données
+
+<br>
+
+![](img/r_intro_12g.png){fig-align="center"}
+
+## 🫵Importer les données
+
+<br>
+
+![](img/r_intro_12h.png){fig-align="center"}
+
+## 🫵Importer les données
+
+<br>
+
+![](img/r_intro_12i.png){fig-align="center"}
+
+## 🫵Importer les données
+
+<br>
+
+![](img/r_intro_12j.png){fig-align="center"}
+
+## 🫵Importer les données
+
+<br>
+
+![](img/r_intro_12k.png){fig-align="center"}
+
+## 🫵Importer les données
+
+<br>
+
+![](img/r_intro_12l.png){fig-align="center"}
+
+## 🫵Importer les données
+
+<br>
+
+![](img/r_intro_12m.png){fig-align="center"}
+
+## 🫵Importer les données
+
+<br>
+
+![](img/r_intro_12n.png){fig-align="center"}
+
+## 🫵Importer les données
+
+<br>
+
+![](img/r_intro_12o.png){fig-align="center"}
+
+## 🫵Importer les données
+
+<br>
+
+![](img/r_intro_12p.png){fig-align="center"}
+
+## 🫵Importer les données
+
+<br>
+
+![](img/r_intro_12q.png){fig-align="center"}
+
+## 🫵Importer les données
+
+<br>
+
+![](img/r_intro_12r.png){fig-align="center"}
+
+## 🫵Importer les données
+
+<br>
+
+![](img/r_intro_12s.png){fig-align="center"}
+
+## ✅Importer les données
+
+<br>
+
+![](img/r_intro_12t.png){fig-align="center"}
+
+## ✅Importer les données
+
+<br>
+
+![](img/r_intro_12u.png){fig-align="center"}
+
+## ❓`csv` et `csv2`
+
+<br>
+
+Il existe deux variantes du format `csv` (*comma-separated values) :*
+
+| Variante | Séparateur de colonnes | Séparateur décimal | Commande      |
+|----------|------------------------|--------------------|---------------|
+| `.csv`   | `,`                    | `.`                | `read.csv()`  |
+| `.csv2`  | `;`                    | `,`                | `read.csv2()` |
+
+## ❓Fonctions
+
+<br>
+
+Toutes les opérations effectuées jusqu'ici ont fait appel à des fonctions :
+
+-   `+`
+
+-   `plot()`
+
+-   `read.csv()`
+
+-   `View()`
+
+## ❓Fonction
+
+<br>
+
+![](img/r_intro_13a.png){fig-align="center"}
+
+## 🫵Fonction `read.csv()`
+
+<br>
+
+-   En utilisant l'onglet `History`, retrouver la commande `penguins <- read.csv(...)`
+
+-   Envoyer cette commande vers la console à l'aide de `To Console`
+
+-   Supprimer le début de la commande pour ne conserver que `read.csv(...)`
+
+-   Exécuter la commande à l'aide de la touche `Entrée`
+
+**Que se passe-t-il ?**
+
+## ✅Fonction `read.csv()`
+
+<br>
+
+![](img/r_intro_13b.png){fig-align="center"}
+
+## 🫵`penguins <- read.csv("...")`
+
+<br>
+
+-   En utilisant l'onglet `History`, retrouver la commande `penguins <- read.csv(...)`
+
+-   Envoyer cette commande vers la console à l'aide de `To Console`
+
+-   Exécuter la commande à l'aide de la touche `Entrée`
+
+**Qu'est-ce qui diffère de la commande précédente `read.csv("...")` ?**
+
+## ❓Assignation
+
+<br>
+
+![](img/r_intro_13c.png){fig-align="center"}
+
+## ❓Language orienté objet
+
+<br>
+
+R est un langage orienté objet : tout ce que l'on manipule (valeurs numériques, tableaux, ...) est un **objet**.
+
+En informatique, un objet est une entité qui regroupe :
+
+-   des **attributs** (information)
+
+-   des **méthodes** liéées au type de l'objet
+
+## ❓Language orienté objet
+
+<br>
+
+La fonction `c()` permet de concaténer des éléments.
+
+Une chaîne de caractères est encadrée par des guillemets (*quotes*) : `"..."`
+
+```{r}
+liste_de_courses <- c("pomme", "banane", "kiwi")
+```
+
+L'objet `liste_de_courses` est de type *character* :
+
+```{r}
+typeof(liste_de_courses)
+```
+
+L'objet `liste_de_courses` possède des attributs :
+
+```{r}
+liste_de_courses
+```
+
+## ❓Language orienté objet
+
+<br>
+
+Les méthodes sont des opérations applicables aux objets.
+
+La fonction `print()` permet d'afficher le contenu d'un objet :
+
+```{r}
+print(liste_de_courses)
+```
+
+Multiplier une chaîne de caractères n'a aucun sens :
+
+```{r}
+#| error: true
+liste_de_courses * 2
+```
+
+## ❓Environnement global
+
+<br>
+
+-   Espace de travail dans lequel sont stockés tous les objets
+
+-   Existe tant qu'une session R est ouverte
+
+-   La commande `ls()` (*list*) permet d'afficher tous les objets présents dans l'environnement global
+
+![](img/r_intro_13d.png){fig-align="center"}
+
+## 🫵Objets et environnement
+
+<br>
+
+-   Créer l'objet `nombres` contenant les valeurs 1, 2 et 3
+
+-   Afficher la liste des objets présents dans l'environnement global
+
+**Dans quel ordre les objets sont-ils affichés ?**
+
+## ✅Objets et environnement
+
+<br>
+
+![](img/r_intro_13e.png){fig-align="center"}
+
+## 🫵Compléter le script - importer les données
+
+<br>
+
+-   En utilisant l'onglet `History`, retrouver la commande `penguins <- read.csv("...")`
+
+-   Envoyer cette commande vers le script à l'aide de `To Source`
+
+ou
+
+-   Dans la console, naviguer dans l'historique des commandes à l'aide des touches ⬆️ et ⬇️
+
+-   Retrouver la commande `penguins <- read.csv("...")`
+
+-   Copier cette commande (`Ctrl` + `C`) et la coller dans le script (`Ctrl` + `V`)
+
+## ✅Compléter le script - importer les données
+
+<br>
+
+![](img/r_intro_13f.png){fig-align="center"}
+
+## ✅Compléter le script - importer les données
+
+<br>
+
+![](img/r_intro_13g.png){fig-align="center"}
+
+## 🫵Structurer un script
+
+<br>
+
+-   Sous l'en-tête du script (au-dessus de la commande `penguins <- read.csv("...")`, ajouter un commentaire : `# Importer les données`
+
+-   Ajouter à la fin de ce commentaire au moins quatre tirets : `----`
+
+**Le commentaire ajouté devient un titre de section.**
+
+## ✅Structurer un script
+
+<br>
+
+![](img/r_intro_13h.png){fig-align="center"}
+
+## 🫵Table des matières
+
+<br>
+
+![](img/r_intro_13i.png){fig-align="center"}
+
+## ❓Niveaux de titres
+
+<br>
+
+Il est possible de définir des titres de différents niveaux (jusqu'à 6), ajoutant des `#` :
+
+![](img/r_intro_13j.png){fig-align="center"}
+
+::: {.callout-tip icon="false"}
+#### ⌨️Insérer une nouvelle section
+
+`Ctrl` + `Shift` + `R`
+
+Les niveaux doivent être ajoutés manuellement
+:::
+
+## ❓Se repérer dans un script
+
+<br>
+
+![](img/r_intro_13k.png){fig-align="center"}
+
+## 🫵Replier / développer le code
+
+<br>
+
+-   Replier le code de la section `Importer les données` en cliquant sur la flèche à gauche du titre de la section
+
+-   Développer le code de la section en cliquant à nouveau sur la flèche à gauche du titre (ou en cliquant sur ↔️ à droite du titre de la section)
+
+::: {.callout-tip icon="false"}
+#### ⌨️Replier / développer toutes les sections
+
+`Alt` + `O` (replier) et `Alt`+ `Shift` + `O` (développer)
+:::
+
+## ✅Replier / développer le code
+
+<br>
+
+![](img/r_intro_13l.png){fig-align="center"}
+
+## ❓Chemin absolu vs. chemin relatif
+
+<br>
+
+Le chemin indique l'emplacement d'un fichier ou d'un dossier dans un système de fichiers.
+
+-   Chemin **absolu** : depuis la racine du système de fichiers
+
+-   Chemin **relatif** : depuis la racine du répertoire de travail (le projet dans notre cas)
+
+![](img/r_intro_13m.png){fig-align="center"}
+
+## 🫵Modifier le script - chemin relatif
+
+<br>
+
+Dans l'appel à la fonction `read.csv()`, remplacer le chemin absolu (utilisé par défaut lors de l'importation du fichier telle que nous l'avons effectuée) par le chemin relatif.
+
+![](img/r_intro_13n.png){fig-align="center"}
+
+::: {.callout-important appearance="simple"}
+#### Pensez à sauvegarder régulièrement votre script !
+:::
+
+## ❓Auto-complétion
+
+<br>
+
+R permet de compléter le code en cours d'écriture :
+
+-   taper quelques caractères
+
+-   appuyer sur la touche `Tab` (se fait automatiquement à partir de trois caractères)
+
+-   naviguer dans la liste proposée à l'aide des flèches ⬆️ et ⬇️
+
+-   valider son choix à l'aide de la touche `Tab` (ou `Entrée`)
+
+## 🫵Auto-complétion - fonction
+
+<br>
+
+-   Sur la ligne `penguins <- read.csv("...")`, supprimer la commande `read.csv("...")`
+
+-   Taper `re` et appuyer sur la touche `Tab`
+
+-   Chercher la fonction `read.csv()` et valider en appuyant sur la touche `Tab` (ou `Entrée`)
+
+-   Supprimer la commande `read.csv()`
+
+-   Taper `rea`
+
+**Que remarquez-vous ?**
+
+## ✅Auto-complétion - fonction
+
+<br>
+
+![](img/r_intro_13o.png){fig-align="center"}
+
+## 🫵Auto-complétion - chemin
+
+<br>
+
+-   Dans l'appel à la fonction `read.csv()`, à l'intérieur des parenthèses, ajouter un guillemet double `"` (le deuxième guillemet est ajouté automatiquement pour compléter la paire)
+
+-   Appuyer sur la touche `Tab` et choisir le fichier à importer
+
+-   Valider à l'aide de la touche `Tab` (ou `Entrée`, mais cela nécessite d'appuyer à nouveau sur `Tab` pour compléter le chemin si l'on navigue dans les dossiers)
+
+## 🫵Exécuter le code
+
+<br>
+
+-   Placer le curseur sur la ligne de code `penguins <- read.csv("...")`
+
+-   Cliquer sur l'icône `Run` en haut à droite du script
+
+-   Sélectionner l'ensemble du script
+
+-   Cliquer sur l'icône `Run`
+
+**Que remarquez-vous dans la console ?**
+
+::: {.callout-tip icon="false"}
+#### ⌨️Exécuter le code
+
+-   Pour une ligne ou une sélection de lignes : `Ctrl` + `Entrée`
+
+-   Pour exécuter tout le script : `Ctrl` + `Shift` + `Entrée` (exécute la fonction `source()` dans la console)
+:::
+
+## ✅Exécuter le code
+
+<br>
+
+![](img/r_intro_13q.png){fig-align="center"}
+
+## ✅Auto-complétion - chemin
+
+<br>
+
+![](img/r_intro_13p.png){fig-align="center"}
+
+## 🫵Auto-complétion - environnement global
+
+<br>
+
+-   Sur une nouvelle ligne : taper `pen` (ou `pe` + `Tab`)
+
+-   Choisir l'objet `penguins` et valider à l'aide de la touche `Tab` (ou `Entrée`)
+
+## ✅Auto-complétion - environnement global
+
+<br>
+
+![](img/r_intro_13r.png){fig-align="center"}
