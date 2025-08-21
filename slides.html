@@ -1291,6 +1291,35 @@ Jonathan Kitt <a href="https://orcid.org/0000-0002-3817-4538" class="quarto-titl
 </div>
 </div>
 </section>
+<section id="exécuter-le-code" class="slide level2">
+<h2>🫵Exécuter le code</h2>
+<p><br></p>
+<ul>
+<li><p>Placer le curseur sur la ligne de code <code>penguins &lt;- read.csv("...")</code></p></li>
+<li><p>Cliquer sur l’icône <code>Run</code> en haut à droite du script</p></li>
+<li><p>Sélectionner l’ensemble du script</p></li>
+<li><p>Cliquer sur l’icône <code>Run</code></p></li>
+</ul>
+<p><strong>Que remarquez-vous dans la console ?</strong></p>
+<div class="callout callout-tip no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>⌨️Exécuter le code</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><p>Pour une ligne ou une sélection de lignes : <code>Ctrl</code> + <code>Entrée</code></p></li>
+<li><p>Pour exécuter tout le script : <code>Ctrl</code> + <code>Shift</code> + <code>Entrée</code> (exécute la fonction <code>source()</code> dans la console)</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="exécuter-le-code-2" class="slide level2">
+<h2>✅Exécuter le code</h2>
+<p><br></p>
+
+<img data-src="img/r_intro_13q.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="auto-complétion" class="slide level2">
 <h2>❓Auto-complétion</h2>
 <p><br></p>
@@ -1328,35 +1357,6 @@ Jonathan Kitt <a href="https://orcid.org/0000-0002-3817-4538" class="quarto-titl
 <li><p>Valider à l’aide de la touche <code>Tab</code> (ou <code>Entrée</code>, mais cela nécessite d’appuyer à nouveau sur <code>Tab</code> pour compléter le chemin si l’on navigue dans les dossiers)</p></li>
 </ul>
 </section>
-<section id="exécuter-le-code" class="slide level2">
-<h2>🫵Exécuter le code</h2>
-<p><br></p>
-<ul>
-<li><p>Placer le curseur sur la ligne de code <code>penguins &lt;- read.csv("...")</code></p></li>
-<li><p>Cliquer sur l’icône <code>Run</code> en haut à droite du script</p></li>
-<li><p>Sélectionner l’ensemble du script</p></li>
-<li><p>Cliquer sur l’icône <code>Run</code></p></li>
-</ul>
-<p><strong>Que remarquez-vous dans la console ?</strong></p>
-<div class="callout callout-tip no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>⌨️Exécuter le code</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li><p>Pour une ligne ou une sélection de lignes : <code>Ctrl</code> + <code>Entrée</code></p></li>
-<li><p>Pour exécuter tout le script : <code>Ctrl</code> + <code>Shift</code> + <code>Entrée</code> (exécute la fonction <code>source()</code> dans la console)</p></li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="exécuter-le-code-2" class="slide level2">
-<h2>✅Exécuter le code</h2>
-<p><br></p>
-
-<img data-src="img/r_intro_13q.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="auto-complétion---chemin-1" class="slide level2">
 <h2>✅Auto-complétion - chemin</h2>
 <p><br></p>
@@ -1374,8 +1374,311 @@ Jonathan Kitt <a href="https://orcid.org/0000-0002-3817-4538" class="quarto-titl
 <h2>✅Auto-complétion - environnement global</h2>
 <p><br></p>
 
+<img data-src="img/r_intro_13r.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="nettoyer-lenvironnement-global" class="slide level2">
+<h2>🫵Nettoyer l’environnement global</h2>
+<p><br></p>
+<ul>
+<li><p>La fonction <code>rm()</code> permet de supprimer un objet (ou plusieurs objets) de l’environnement global : dans la console, taper <code>rm(nombres)</code></p></li>
+<li><p>Dans l’onglet <code>Environment</code>, cliquer sur <code>List</code> (à droite) et sélectionner <code>Grid</code>.</p></li>
+</ul>
+<p><strong>Quelle différence remarquez-vous dans l’ordre d’affichage des objets ?</strong></p>
+<ul>
+<li><p>Cocher la case à gauche de l’objet <code>liste_de_courses</code></p></li>
+<li><p>Cliquer sur l’icône 🧹 et confirmer la suppression de l’objet <code>liste_de_courses</code></p></li>
+</ul>
+<div class="callout callout-warning callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Cliquer sur l’icône 🧹 alors en mode “List” causera la perte de tous les objets de l’environnement global.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="nettoyer-lenvironnement-global-1" class="slide level2">
+<h2>✅Nettoyer l’environnement global</h2>
+<p><br></p>
 
-<img data-src="img/r_intro_13r.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+<img data-src="img/r_intro_13u.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="mettre-en-évidence-les-fonctions" class="slide level2">
+<h2>⚙️Mettre en évidence les fonctions</h2>
+<p><br></p>
+<p><strong>Tools ▶️ Global Options ▶️ Code ▶️ Display</strong></p>
+
+<img data-src="img/r_intro_13s.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="environnement-de-travail-et-historique" class="slide level2">
+<h2>⚙️Environnement de travail et historique</h2>
+<p><br></p>
+<p><strong>Tools ▶️ Global Options ▶️ General ▶️ Basic</strong></p>
+
+<img data-src="img/r_intro_13t.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+<section>
+<section id="explorer-les-données" class="title-slide slide level1 center">
+<h1>Explorer les données</h1>
+
+</section>
+<section id="compléter-le-script" class="slide level2">
+<h2>🫵Compléter le script</h2>
+<p><br></p>
+<p>Créer une nouvelle section intitulée “Explorer les données”</p>
+</section>
+<section id="compléter-le-script-1" class="slide level2">
+<h2>✅Compléter le script</h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14a.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="structure-des-données" class="slide level2">
+<h2>🫵Structure des données</h2>
+<p><br></p>
+<ul>
+<li><p>Dans l’environnement global, repasser en mode “List”</p></li>
+<li><p>Cliquer sur la flèche à gauche de l’objet <code>penguins</code></p></li>
+<li><p>Cliquer sur l’icône “tableau” à droite sur la ligne de l’objet <code>penguins</code> dans l’environnement global</p></li>
+<li><p>La fonction <code>str()</code> permet d’afficher la <em>structure</em> d’un objet. Dans la console, taper la commande <code>str(penguins)</code></p></li>
+</ul>
+</section>
+<section id="structure-des-données-1" class="slide level2">
+<h2>✅Structure des données</h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14b.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="la-fonction-str" class="slide level2">
+<h2>❓La fonction <code>str()</code></h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14c.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="la-fonction-str-1" class="slide level2">
+<h2>❓La fonction <code>str()</code></h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14d.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="la-fonction-str-2" class="slide level2">
+<h2>❓La fonction <code>str()</code></h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14e.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="la-fonction-str-3" class="slide level2">
+<h2>❓La fonction <code>str()</code></h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14f.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="la-fonction-str-4" class="slide level2">
+<h2>❓La fonction <code>str()</code></h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14g.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="la-fonction-str-5" class="slide level2">
+<h2>❓La fonction <code>str()</code></h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14h.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="la-fonction-str-6" class="slide level2">
+<h2>❓La fonction <code>str()</code></h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14i.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="la-fonction-str-7" class="slide level2">
+<h2>❓La fonction <code>str()</code></h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14j.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="explorer-les-données-1" class="slide level2">
+<h2>🫵Explorer les données</h2>
+<p><br></p>
+<p>Dans la console, taper les commandes suivantes.</p>
+<ul>
+<li><p><code>dim(penguins)</code></p></li>
+<li><p><code>nrow(penguins)</code></p></li>
+<li><p><code>ncol(penguins)</code></p></li>
+<li><p><code>names(penguins)</code> et <code>colnames(penguins)</code></p></li>
+</ul>
+<p><strong>Que renvoie chacune des commandes ?</strong></p>
+</section>
+<section id="explorer-les-données-2" class="slide level2">
+<h2>✅Explorer les données</h2>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href=""></a><span class="co"># Dimensions du tableau (nb lignes, nb colonnes)</span></span>
+<span id="cb33-2"><a href=""></a><span class="fu">dim</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 344   8</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href=""></a><span class="co"># Nombre de lignes du tableau (observations)</span></span>
+<span id="cb35-2"><a href=""></a><span class="fu">nrow</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 344</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href=""></a><span class="co"># Nombre de colonnes du tableau (variables)</span></span>
+<span id="cb37-2"><a href=""></a><span class="fu">ncol</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 8</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href=""></a><span class="co"># Noms des variables du tableau</span></span>
+<span id="cb39-2"><a href=""></a><span class="fu">colnames</span>(penguins)  <span class="co"># ou names(penguins)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "species"           "island"            "bill_length_mm"   
+[4] "bill_depth_mm"     "flipper_length_mm" "body_mass_g"      
+[7] "sex"               "year"             </code></pre>
+</div>
+</div>
+</section>
+<section id="afficher-le-contenu-dune-variable" class="slide level2">
+<h2>🫵Afficher le contenu d’une variable</h2>
+<p><br></p>
+<p>Dans la console, taper la commande <code>penguins$year</code> (penser à l’auto-complétion).</p>
+<p><strong>Que représentent les nombres entre crochets au début de chaque ligne ?</strong></p>
+</section>
+<section id="afficher-le-contenu-dune-variable-1" class="slide level2">
+<h2>✅Afficher le contenu d’une variable</h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14k.png" class="quarto-figure quarto-figure-center r-stretch"><div class="callout callout-tip callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Les nombres entre crochets sont les index des valeurs affichées (la 2<sup>ème</sup> ligne débute avec la 16<sup>ème</sup> valeur de la variable <code>year</code>)</p>
+</div>
+</div>
+</div>
+</section>
+<section id="afficher-les-premiers-et-les-derniers-éléments" class="slide level2">
+<h2>🫵Afficher les premiers et les derniers éléments</h2>
+<p><br></p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>head(penguins)</code> et <code>head(penguins$year)</code></p></li>
+<li><p><code>tail(penguins)</code> et <code>tail(penguins$year)</code></p></li>
+</ul>
+<p><strong>Quelle est la différence entre ces deux fonctions ?</strong></p>
+<p><strong>Quelle est la différence entre l’utilisation de ces fonctions pour un tableau ou une variable ?</strong></p>
+<p><strong>Combien d’éléments sont affichés ?</strong></p>
+</section>
+<section id="afficher-les-premiers-et-les-derniers-éléments-1" class="slide level2">
+<h2>✅Afficher les premiers et les derniers éléments</h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14l.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="aide-dune-fonction" class="slide level2">
+<h2>❓Aide d’une fonction</h2>
+<p>La fonction <code>help()</code> permet d’afficher l’aide d’une fonction. Elle s’utilise de la manière suivante : <code>help(head)</code> ou <code>?head</code>.</p>
+<p>L’aide d’une fonction est également accessible en tapant les premières lettres du nom de la fonction et en appuyant sur la touche <code>Tab</code> puis la touche <code>F1</code>.</p>
+
+<img data-src="img/r_intro_14m.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="aide-dune-fonction-1" class="slide level2">
+<h2>❓Aide d’une fonction</h2>
+<p><br></p>
+<ul>
+<li><p><strong>Description</strong> : ce que fait la fonction</p></li>
+<li><p><strong>Usage</strong> : comment utiliser la fonction</p></li>
+<li><p><strong>Arguments</strong> : différentes manières d’utiliser la fonction</p></li>
+<li><p><strong>Details</strong> : description détaillée de la fonction</p></li>
+<li><p><strong>Value</strong> : ce que renvoie la fonction</p></li>
+<li><p><strong>Note</strong> : précisions</p></li>
+<li><p><strong>Author(s)</strong> : liste des personnes qui ont contribué à l’écriture du code et aux éventuelles modifications et corrections</p></li>
+<li><p><strong>Examples</strong> : exemples d’utilisation de la fonction (exemples exécutables directement dans RStudio)</p></li>
+</ul>
+</section>
+<section id="aide-dune-fonction-2" class="slide level2">
+<h2>🫵Aide d’une fonction</h2>
+<p><br></p>
+<p>Parcourir rapidement l’aide de la fonction <code>head()</code>.</p>
+<p><strong>Comment faire pour afficher les trois première lignes du tableau <code>penguins</code> ?</strong></p>
+</section>
+<section id="aide-dune-fonction-3" class="slide level2">
+<h2>✅Aide d’une fonction</h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14n.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="aide-dune-fonction-4" class="slide level2">
+<h2>✅Aide d’une fonction</h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14o.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="les-fonctions-attach-et-detach" class="slide level2">
+<h2>🫵Les fonctions <code>attach()</code> et <code>detach()</code></h2>
+<p><br></p>
+<p>La fonction <code>attach()</code> permet de faire référence aux variables en utilisant leurs noms, sans avoir besoin d’utiliser la syntaxe <code>data.frame$variable</code>.</p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>attach(penguins)</code></p></li>
+<li><p><code>head(year)</code></p></li>
+<li><p><code>detach(year)</code></p></li>
+<li><p><code>head(year)</code></p></li>
+</ul>
+</section>
+<section id="les-fonctions-attach-et-detach-1" class="slide level2">
+<h2>✅Les fonctions <code>attach()</code> et <code>detach()</code></h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14p.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="la-fonction-search" class="slide level2">
+<h2>🫵La fonction <code>search()</code></h2>
+<p><br></p>
+<p>La fonction <code>search()</code> permet de lister les objets “attachés”.</p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>search()</code></p></li>
+<li><p><code>attach(penguins)</code></p></li>
+<li><p><code>search()</code></p></li>
+<li><p><code>detach(penguins)</code></p></li>
+<li><p><code>search()</code></p></li>
+</ul>
+<p><strong>Que remarquez-vous ?</strong></p>
+</section>
+<section id="la-fonction-search-1" class="slide level2">
+<h2>✅La fonction <code>search()</code></h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14q.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="la-fonction-summary" class="slide level2">
+<h2>🫵La fonction <code>summary()</code></h2>
+<p><br></p>
+<p>Dans la console, taper et exécuter la commande suivante : <code>summary(penguins)</code></p>
+<p><strong>Que retourne cette commande ?</strong></p>
+<p><strong>Quelles différences remarquez-vous dans le résultat ?</strong></p>
+</section>
+<section id="la-fonction-summary-1" class="slide level2">
+<h2>✅La fonction <code>summary()</code></h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14r.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="la-fonction-summary-2" class="slide level2">
+<h2>✅La fonction <code>summary()</code></h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14s.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="la-fonction-summary-3" class="slide level2">
+<h2>✅La fonction <code>summary()</code></h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14t.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="la-fonction-summary-4" class="slide level2">
+<h2>🫵La fonction <code>summary()</code></h2>
+<p><br></p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>summary(penguins$species)</code></p></li>
+<li><p><code>summary(penguins$body_mass_g)</code></p></li>
+</ul>
+<p><strong>Que renvoient ces deux commandes ?</strong></p>
+</section>
+<section id="la-fonction-summary-5" class="slide level2">
+<h2>✅La fonction <code>summary()</code></h2>
+<p><br></p>
+
+
+<img data-src="img/r_intro_14u.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

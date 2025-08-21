@@ -41,3 +41,5 @@ author:
 {{< include "04_organisation.qmd" >}}
 
 {{< include "05_importer.qmd" >}}
+
+{{< include "06_explorer.qmd" >}}

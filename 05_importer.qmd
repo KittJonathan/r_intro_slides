@@ -408,6 +408,34 @@ Dans l'appel à la fonction `read.csv()`, remplacer le chemin absolu (utilisé p
 #### Pensez à sauvegarder régulièrement votre script !
 :::
 
+## 🫵Exécuter le code
+
+<br>
+
+-   Placer le curseur sur la ligne de code `penguins <- read.csv("...")`
+
+-   Cliquer sur l'icône `Run` en haut à droite du script
+
+-   Sélectionner l'ensemble du script
+
+-   Cliquer sur l'icône `Run`
+
+**Que remarquez-vous dans la console ?**
+
+::: {.callout-tip icon="false"}
+#### ⌨️Exécuter le code
+
+-   Pour une ligne ou une sélection de lignes : `Ctrl` + `Entrée`
+
+-   Pour exécuter tout le script : `Ctrl` + `Shift` + `Entrée` (exécute la fonction `source()` dans la console)
+:::
+
+## ✅Exécuter le code
+
+<br>
+
+![](img/r_intro_13q.png){fig-align="center"}
+
 ## ❓Auto-complétion
 
 <br>
@@ -454,34 +482,6 @@ R permet de compléter le code en cours d'écriture :
 
 -   Valider à l'aide de la touche `Tab` (ou `Entrée`, mais cela nécessite d'appuyer à nouveau sur `Tab` pour compléter le chemin si l'on navigue dans les dossiers)
 
-## 🫵Exécuter le code
-
-<br>
-
--   Placer le curseur sur la ligne de code `penguins <- read.csv("...")`
-
--   Cliquer sur l'icône `Run` en haut à droite du script
-
--   Sélectionner l'ensemble du script
-
--   Cliquer sur l'icône `Run`
-
-**Que remarquez-vous dans la console ?**
-
-::: {.callout-tip icon="false"}
-#### ⌨️Exécuter le code
-
--   Pour une ligne ou une sélection de lignes : `Ctrl` + `Entrée`
-
--   Pour exécuter tout le script : `Ctrl` + `Shift` + `Entrée` (exécute la fonction `source()` dans la console)
-:::
-
-## ✅Exécuter le code
-
-<br>
-
-![](img/r_intro_13q.png){fig-align="center"}
-
 ## ✅Auto-complétion - chemin
 
 <br>
@@ -501,3 +501,43 @@ R permet de compléter le code en cours d'écriture :
 <br>
 
 ![](img/r_intro_13r.png){fig-align="center"}
+
+## 🫵Nettoyer l'environnement global
+
+<br>
+
+-   La fonction `rm()` permet de supprimer un objet (ou plusieurs objets) de l'environnement global : dans la console, taper `rm(nombres)`
+
+-   Dans l'onglet `Environment`, cliquer sur `List` (à droite) et sélectionner `Grid`.
+
+**Quelle différence remarquez-vous dans l'ordre d'affichage des objets ?**
+
+-   Cocher la case à gauche de l'objet `liste_de_courses`
+
+-   Cliquer sur l'icône 🧹 et confirmer la suppression de l'objet `liste_de_courses`
+
+::: {.callout-warning appearance="simple"}
+Cliquer sur l'icône 🧹 alors en mode "List" causera la perte de tous les objets de l'environnement global.
+:::
+
+## ✅Nettoyer l'environnement global
+
+<br>
+
+![](img/r_intro_13u.png){fig-align="center"}
+
+## ⚙️Mettre en évidence les fonctions
+
+<br>
+
+**Tools ▶️ Global Options ▶️ Code ▶️ Display**
+
+![](img/r_intro_13s.png){fig-align="center"}
+
+## ⚙️Environnement de travail et historique
+
+<br>
+
+**Tools ▶️ Global Options ▶️ General ▶️ Basic**
+
+![](img/r_intro_13t.png){fig-align="center"}

@@ -1,0 +1,305 @@
+# Explorer les données
+
+## 🫵Compléter le script
+
+<br>
+
+Créer une nouvelle section intitulée "Explorer les données"
+
+## ✅Compléter le script
+
+<br>
+
+![](img/r_intro_14a.png){fig-align="center"}
+
+## 🫵Structure des données
+
+<br>
+
+-   Dans l'environnement global, repasser en mode "List"
+
+-   Cliquer sur la flèche à gauche de l'objet `penguins`
+
+-   Cliquer sur l'icône "tableau" à droite sur la ligne de l'objet `penguins` dans l'environnement global
+
+-   La fonction `str()` permet d'afficher la *structure* d'un objet. Dans la console, taper la commande `str(penguins)`
+
+## ✅Structure des données
+
+<br>
+
+![](img/r_intro_14b.png){fig-align="center"}
+
+## ❓La fonction `str()`
+
+<br>
+
+![](img/r_intro_14c.png){fig-align="center"}
+
+## ❓La fonction `str()`
+
+<br>
+
+![](img/r_intro_14d.png){fig-align="center"}
+
+## ❓La fonction `str()`
+
+<br>
+
+![](img/r_intro_14e.png){fig-align="center"}
+
+## ❓La fonction `str()`
+
+<br>
+
+![](img/r_intro_14f.png){fig-align="center"}
+
+## ❓La fonction `str()`
+
+<br>
+
+![](img/r_intro_14g.png){fig-align="center"}
+
+## ❓La fonction `str()`
+
+<br>
+
+![](img/r_intro_14h.png){fig-align="center"}
+
+## ❓La fonction `str()`
+
+<br>
+
+![](img/r_intro_14i.png){fig-align="center"}
+
+## ❓La fonction `str()`
+
+<br>
+
+![](img/r_intro_14j.png){fig-align="center"}
+
+## 🫵Explorer les données
+
+<br>
+
+Dans la console, taper les commandes suivantes.
+
+-   `dim(penguins)`
+
+-   `nrow(penguins)`
+
+-   `ncol(penguins)`
+
+-   `names(penguins)` et `colnames(penguins)`
+
+**Que renvoie chacune des commandes ?**
+
+## ✅Explorer les données
+
+<br>
+
+```{r, include=FALSE}
+penguins <- read.csv("penguins.csv")
+```
+
+```{r}
+# Dimensions du tableau (nb lignes, nb colonnes)
+dim(penguins)
+```
+
+```{r}
+# Nombre de lignes du tableau (observations)
+nrow(penguins)
+```
+
+```{r}
+# Nombre de colonnes du tableau (variables)
+ncol(penguins)
+```
+
+```{r}
+# Noms des variables du tableau
+colnames(penguins)  # ou names(penguins)
+```
+
+## 🫵Afficher le contenu d'une variable
+
+<br>
+
+Dans la console, taper la commande `penguins$year` (penser à l'auto-complétion).
+
+**Que représentent les nombres entre crochets au début de chaque ligne ?**
+
+## ✅Afficher le contenu d'une variable
+
+<br>
+
+![](img/r_intro_14k.png){fig-align="center"}
+
+::: {.callout-tip appearance="simple"}
+Les nombres entre crochets sont les index des valeurs affichées (la 2^ème^ ligne débute avec la 16^ème^ valeur de la variable `year`)
+:::
+
+## 🫵Afficher les premiers et les derniers éléments
+
+<br>
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `head(penguins)` et `head(penguins$year)`
+
+-   `tail(penguins)` et `tail(penguins$year)`
+
+**Quelle est la différence entre ces deux fonctions ?**
+
+**Quelle est la différence entre l'utilisation de ces fonctions pour un tableau ou une variable ?**
+
+**Combien d'éléments sont affichés ?**
+
+## ✅Afficher les premiers et les derniers éléments
+
+<br>
+
+![](img/r_intro_14l.png){fig-align="center"}
+
+## ❓Aide d'une fonction
+
+La fonction `help()` permet d'afficher l'aide d'une fonction. Elle s'utilise de la manière suivante : `help(head)` ou `?head`.
+
+L'aide d'une fonction est également accessible en tapant les premières lettres du nom de la fonction et en appuyant sur la touche `Tab` puis la touche `F1`.
+
+![](img/r_intro_14m.png){fig-align="center"}
+
+## ❓Aide d'une fonction
+
+<br>
+
+-   **Description** : ce que fait la fonction
+
+-   **Usage** : comment utiliser la fonction
+
+-   **Arguments** : différentes manières d'utiliser la fonction
+
+-   **Details** : description détaillée de la fonction
+
+-   **Value** : ce que renvoie la fonction
+
+-   **Note** : précisions
+
+-   **Author(s)** : liste des personnes qui ont contribué à l'écriture du code et aux éventuelles modifications et corrections
+
+-   **Examples** : exemples d'utilisation de la fonction (exemples exécutables directement dans RStudio)
+
+## 🫵Aide d'une fonction
+
+<br>
+
+Parcourir rapidement l'aide de la fonction `head()`.
+
+**Comment faire pour afficher les trois première lignes du tableau `penguins` ?**
+
+## ✅Aide d'une fonction
+
+<br>
+
+![](img/r_intro_14n.png){fig-align="center"}
+
+## ✅Aide d'une fonction
+
+<br>
+
+![](img/r_intro_14o.png){fig-align="center"}
+
+## 🫵Les fonctions `attach()` et `detach()`
+
+<br>
+
+La fonction `attach()` permet de faire référence aux variables en utilisant leurs noms, sans avoir besoin d'utiliser la syntaxe `data.frame$variable`.
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `attach(penguins)`
+
+-   `head(year)`
+
+-   `detach(year)`
+
+-   `head(year)`
+
+## ✅Les fonctions `attach()` et `detach()`
+
+<br>
+
+![](img/r_intro_14p.png){fig-align="center"}
+
+## 🫵La fonction `search()`
+
+<br>
+
+La fonction `search()` permet de lister les objets "attachés".
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `search()`
+
+-   `attach(penguins)`
+
+-   `search()`
+
+-   `detach(penguins)`
+
+-   `search()`
+
+**Que remarquez-vous ?**
+
+## ✅La fonction `search()`
+
+<br>
+
+![](img/r_intro_14q.png){fig-align="center"}
+
+## 🫵La fonction `summary()`
+
+<br>
+
+Dans la console, taper et exécuter la commande suivante : `summary(penguins)`
+
+**Que retourne cette commande ?**
+
+**Quelles différences remarquez-vous dans le résultat ?**
+
+## ✅La fonction `summary()`
+
+<br>
+
+![](img/r_intro_14r.png){fig-align="center"}
+
+## ✅La fonction `summary()`
+
+<br>
+
+![](img/r_intro_14s.png){fig-align="center"}
+
+## ✅La fonction `summary()`
+
+<br>
+
+![](img/r_intro_14t.png){fig-align="center"}
+
+## 🫵La fonction `summary()`
+
+<br>
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `summary(penguins$species)`
+
+-   `summary(penguins$body_mass_g)`
+
+**Que renvoient ces deux commandes ?**
+
+## ✅La fonction `summary()`
+
+<br>
+
+![](img/r_intro_14u.png){fig-align="center"}
