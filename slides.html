@@ -1677,8 +1677,304 @@ Jonathan Kitt <a href="https://orcid.org/0000-0002-3817-4538" class="quarto-titl
 <h2>✅La fonction <code>summary()</code></h2>
 <p><br></p>
 
+<img data-src="img/r_intro_14u.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="extraire-les-valeurs-extrêmes" class="slide level2">
+<h2>🫵Extraire les valeurs extrêmes</h2>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>min(penguins$body_mass_g)</code></p></li>
+<li><p><code>max(penguins$body_mass_g)</code></p></li>
+</ul>
+<p><strong>Comparer les résultats avec ceux obtenus à l’aide de la commande <code>summary(penguins$body_mass_g)</code></strong>.</p>
+<p><strong>Parcourir l’aide de la fonction <code>min()</code> et modifier les commandes ci-dessus pour tenir compte des données manquantes.</strong></p>
+</section>
+<section id="extraire-les-valeurs-extrêmes-1" class="slide level2">
+<h2>✅Extraire les valeurs extrêmes</h2>
+<p><br></p>
 
-<img data-src="img/r_intro_14u.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+<img data-src="img/r_intro_15a.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="extraire-les-statistiques" class="slide level2">
+<h2>🫵Extraire les statistiques</h2>
+<p><br></p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>quantile(penguins$body_mass_g, na.rm = TRUE)</code></p></li>
+<li><p><code>mean(penguins$body_mass_g, na.rm = TRUE)</code></p></li>
+<li><p><code>median(penguins$body_mass_g, na.rm = TRUE)</code></p></li>
+<li><p><code>var(penguins$body_mass_g, na.rm = TRUE)</code></p></li>
+<li><p><code>sd(penguins$body_mass_g, na.rm = TRUE)</code></p></li>
+</ul>
+<p><strong>Que retournent les fonctions <code>var()</code> et <code>sd()</code> ?</strong></p>
+</section>
+<section id="extraire-les-statistiques-1" class="slide level2">
+<h2>✅Extraire les statistiques</h2>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href=""></a><span class="fu">quantile</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  0%  25%  50%  75% 100% 
+2700 3550 4050 4750 6300 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href=""></a><span class="fu">mean</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4201.754</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href=""></a><span class="fu">median</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">na.rm =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4050</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href=""></a><span class="fu">var</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">na.rm =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 643131.1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href=""></a><span class="fu">sd</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">na.rm =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 801.9545</code></pre>
+</div>
+</div>
+</section>
+<section id="compter-les-observations" class="slide level2">
+<h2>🫵Compter les observations</h2>
+<p><br></p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>table(penguins$species)</code></p></li>
+<li><p><code>table(penguins$species, penguins$island)</code></p></li>
+<li><p><code>table(penguins$species, penguins$island, penguins$sex)</code></p></li>
+</ul>
+<p><strong>Dans quel ordre les différentes catégories sont-elles affichées ?</strong></p>
+</section>
+<section id="compter-les-observations-1" class="slide level2">
+<h2>✅Compter les observations</h2>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href=""></a><span class="fu">table</span>(penguins<span class="sc">$</span>species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+   Adelie Chinstrap    Gentoo 
+      152        68       124 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href=""></a><span class="fu">table</span>(penguins<span class="sc">$</span>species, penguins<span class="sc">$</span>island)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           
+            Biscoe Dream Torgersen
+  Adelie        44    56        52
+  Chinstrap      0    68         0
+  Gentoo       124     0         0</code></pre>
+</div>
+</div>
+</section>
+<section id="compter-les-observations-2" class="slide level2">
+<h2>✅Compter les observations</h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14v.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="afficher-la-sortie-dune-assignation" class="slide level2">
+<h2>🫵Afficher la sortie d’une assignation</h2>
+<p><br></p>
+<p>Dans le script, taper et exécuter la commande suivante :</p>
+<ul>
+<li><p><code>penguins_count &lt;- table(penguins$species, penguins$island)</code></p></li>
+<li><p><code>penguins_count</code></p></li>
+</ul>
+<p>Pour exécuter une commande et afficher la sortie, entourer la commande par des parenthèses <code>(</code> et <code>)</code> :</p>
+<p><code>(penguins_count &lt;- table(penguins$species, penguins$island))</code></p>
+<p>Dans le script, ne conserver que la commande avec les parenthèses.</p>
+</section>
+<section id="afficher-la-sortie-dune-assignation-1" class="slide level2">
+<h2>✅Afficher la sortie d’une assignation</h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14w.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="colorer-les-parenthèses" class="slide level2">
+<h2>⚙️Colorer les parenthèses</h2>
+<p><br></p>
+<p><strong>Tools ▶️ Global Options ▶️ Code ▶️ Display</strong></p>
+
+<img data-src="img/r_intro_14x.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="proportions" class="slide level2">
+<h2>🫵Proportions</h2>
+<p><br></p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>prop.table(penguins_count)</code></p></li>
+<li><p><code>prop.table(penguins_count, margin = 1)</code></p></li>
+<li><p><code>prop.table(penguins_count, margin = 2)</code></p></li>
+</ul>
+<p><strong>Comment les proportions sont-elles calculées dans chacun des cas ?</strong></p>
+</section>
+<section id="proportions-1" class="slide level2">
+<h2>✅Proportions</h2>
+<p><br></p>
+
+<img data-src="img/r_intro_14y.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="proportions-2" class="slide level2">
+<h2>✅Proportions</h2>
+<p><br></p>
+<p>Les proportions du tableau de contingence peuvent être calculées à l’aide des fonctions <code>sum()</code>, <code>rowSums()</code> et <code>colSums()</code> :</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href=""></a><span class="fu">prop.table</span>(penguins_count, <span class="at">margin =</span> <span class="cn">NULL</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           
+               Biscoe     Dream Torgersen
+  Adelie    0.1279070 0.1627907 0.1511628
+  Chinstrap 0.0000000 0.1976744 0.0000000
+  Gentoo    0.3604651 0.0000000 0.0000000</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href=""></a>penguins_count <span class="sc">/</span> <span class="fu">sum</span>(penguins_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           
+               Biscoe     Dream Torgersen
+  Adelie    0.1279070 0.1627907 0.1511628
+  Chinstrap 0.0000000 0.1976744 0.0000000
+  Gentoo    0.3604651 0.0000000 0.0000000</code></pre>
+</div>
+</div>
+</section>
+<section id="proportions-3" class="slide level2">
+<h2>✅Proportions</h2>
+<p><br></p>
+<p>Les proportions du tableau de contingence peuvent être calculées à l’aide des fonctions <code>sum()</code>, <code>rowSums()</code> et <code>colSums()</code> :</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href=""></a><span class="fu">prop.table</span>(penguins_count, <span class="at">margin =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           
+               Biscoe     Dream Torgersen
+  Adelie    0.2894737 0.3684211 0.3421053
+  Chinstrap 0.0000000 1.0000000 0.0000000
+  Gentoo    1.0000000 0.0000000 0.0000000</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href=""></a>penguins_count <span class="sc">/</span> <span class="fu">rowSums</span>(penguins_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           
+               Biscoe     Dream Torgersen
+  Adelie    0.2894737 0.3684211 0.3421053
+  Chinstrap 0.0000000 1.0000000 0.0000000
+  Gentoo    1.0000000 0.0000000 0.0000000</code></pre>
+</div>
+</div>
+</section>
+<section id="proportions-4" class="slide level2">
+<h2>✅Proportions</h2>
+<p><br></p>
+<p>Les proportions du tableau de contingence peuvent être calculées à l’aide des fonctions <code>sum()</code>, <code>rowSums()</code> et <code>colSums()</code> :</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href=""></a><span class="fu">prop.table</span>(penguins_count, <span class="at">margin =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           
+               Biscoe     Dream Torgersen
+  Adelie    0.2619048 0.4516129 1.0000000
+  Chinstrap 0.0000000 0.5483871 0.0000000
+  Gentoo    0.7380952 0.0000000 0.0000000</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href=""></a>penguins_count <span class="sc">/</span> <span class="fu">colSums</span>(penguins_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           
+               Biscoe     Dream Torgersen
+  Adelie    0.2619048 0.3333333 0.3095238
+  Chinstrap 0.0000000 0.5483871 0.0000000
+  Gentoo    2.3846154 0.0000000 0.0000000</code></pre>
+</div>
+</div>
+</section>
+<section id="arrondir-des-valeurs-numériques" class="slide level2">
+<h2>🫵Arrondir des valeurs numériques</h2>
+<p><br></p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>round(prop.table(penguins_count))</code></p></li>
+<li><p><code>round(prop.table(penguins_count), digits = 2)</code></p></li>
+<li><p><code>floor(prop.table(penguins_count))</code></p></li>
+<li><p><code>ceiling(prop.table(penguins_count))</code></p></li>
+</ul>
+<p><strong>Quelles sont les différences entre ces commandes ?</strong></p>
+</section>
+<section id="arrondir-des-valeurs-numériques-1" class="slide level2">
+<h2>✅Arrondir des valeurs numériques</h2>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href=""></a><span class="fu">prop.table</span>(penguins_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           
+               Biscoe     Dream Torgersen
+  Adelie    0.1279070 0.1627907 0.1511628
+  Chinstrap 0.0000000 0.1976744 0.0000000
+  Gentoo    0.3604651 0.0000000 0.0000000</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href=""></a><span class="fu">round</span>(<span class="fu">prop.table</span>(penguins_count))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           
+            Biscoe Dream Torgersen
+  Adelie         0     0         0
+  Chinstrap      0     0         0
+  Gentoo         0     0         0</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href=""></a><span class="fu">round</span>(<span class="fu">prop.table</span>(penguins_count), <span class="at">digits =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           
+            Biscoe Dream Torgersen
+  Adelie      0.13  0.16      0.15
+  Chinstrap   0.00  0.20      0.00
+  Gentoo      0.36  0.00      0.00</code></pre>
+</div>
+</div>
+</section>
+<section id="arrondir-des-valeurs-numériques-2" class="slide level2">
+<h2>✅Arrondir des valeurs numériques</h2>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href=""></a><span class="fu">prop.table</span>(penguins_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           
+               Biscoe     Dream Torgersen
+  Adelie    0.1279070 0.1627907 0.1511628
+  Chinstrap 0.0000000 0.1976744 0.0000000
+  Gentoo    0.3604651 0.0000000 0.0000000</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href=""></a><span class="fu">floor</span>(<span class="fu">prop.table</span>(penguins_count))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           
+            Biscoe Dream Torgersen
+  Adelie         0     0         0
+  Chinstrap      0     0         0
+  Gentoo         0     0         0</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href=""></a><span class="fu">ceiling</span>(<span class="fu">prop.table</span>(penguins_count))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           
+            Biscoe Dream Torgersen
+  Adelie         1     1         1
+  Chinstrap      0     1         0
+  Gentoo         1     0         0</code></pre>
+</div>
+</div>
+</section>
+<section id="exporter-des-données" class="slide level2">
+<h2>🫵Exporter des données</h2>
+<p><br></p>
+<p>Dans le script, taper et exécuter la commande suivante :</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href=""></a><span class="fu">write.csv</span>(<span class="at">x =</span> penguins_count, </span>
+<span id="cb79-2"><a href=""></a>          <span class="at">file =</span> <span class="st">"04_results/penguins_count.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Vérifier que <code>write.csv()</code> a bien fonctionné en tapant et en exécutant la commande suivante dans la console :</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a href=""></a><span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"04_results/penguins_count.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Pour éviter l’ajout d”un <code>X</code> comme titre de la 1<sup>ère</sup> colonne lors de l’importation, utiliser la commande suivante dans la console :</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb81"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a href=""></a><span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"04_results/penguins_count.csv"</span>,</span>
+<span id="cb81-2"><a href=""></a>         <span class="at">col.names =</span> <span class="fu">c</span>(<span class="st">"Species"</span>, <span class="st">"Biscoe"</span>, <span class="st">"Dream"</span>, <span class="st">"Torgersen"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="exporter-des-données-1" class="slide level2">
+<h2>✅Exporter des données</h2>
+<p><br></p>
+
+
+<img data-src="img/r_intro_14z.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

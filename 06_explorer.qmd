@@ -303,3 +303,245 @@ Dans la console, taper et exécuter les commandes suivantes :
 <br>
 
 ![](img/r_intro_14u.png){fig-align="center"}
+
+## 🫵Extraire les valeurs extrêmes
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `min(penguins$body_mass_g)`
+
+-   `max(penguins$body_mass_g)`
+
+**Comparer les résultats avec ceux obtenus à l'aide de la commande `summary(penguins$body_mass_g)`**.
+
+**Parcourir l'aide de la fonction `min()` et modifier les commandes ci-dessus pour tenir compte des données manquantes.**
+
+## ✅Extraire les valeurs extrêmes
+
+<br>
+
+![](img/r_intro_15a.png){fig-align="center"}
+
+## 🫵Extraire les statistiques
+
+<br>
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `quantile(penguins$body_mass_g, na.rm = TRUE)`
+
+-   `mean(penguins$body_mass_g, na.rm = TRUE)`
+
+-   `median(penguins$body_mass_g, na.rm = TRUE)`
+
+-   `var(penguins$body_mass_g, na.rm = TRUE)`
+
+-   `sd(penguins$body_mass_g, na.rm = TRUE)`
+
+**Que retournent les fonctions `var()` et `sd()` ?**
+
+## ✅Extraire les statistiques
+
+<br>
+
+```{r}
+quantile(penguins$body_mass_g, na.rm = TRUE)
+mean(penguins$body_mass_g, na.rm = TRUE)
+median(penguins$body_mass_g, na.rm = T)
+var(penguins$body_mass_g, na.rm = T)
+sd(penguins$body_mass_g, na.rm = T)
+```
+
+## 🫵Compter les observations
+
+<br>
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `table(penguins$species)`
+
+-   `table(penguins$species, penguins$island)`
+
+-   `table(penguins$species, penguins$island, penguins$sex)`
+
+**Dans quel ordre les différentes catégories sont-elles affichées ?**
+
+## ✅Compter les observations
+
+<br>
+
+```{r}
+table(penguins$species)
+```
+
+```{r}
+table(penguins$species, penguins$island)
+```
+
+## ✅Compter les observations
+
+<br>
+
+![](img/r_intro_14v.png){fig-align="center"}
+
+## 🫵Afficher la sortie d'une assignation
+
+<br>
+
+Dans le script, taper et exécuter la commande suivante :
+
+-   `penguins_count <- table(penguins$species, penguins$island)`
+
+-   `penguins_count`
+
+Pour exécuter une commande et afficher la sortie, entourer la commande par des parenthèses `(` et `)` :
+
+`(penguins_count <- table(penguins$species, penguins$island))`
+
+Dans le script, ne conserver que la commande avec les parenthèses.
+
+## ✅Afficher la sortie d'une assignation
+
+<br>
+
+![](img/r_intro_14w.png){fig-align="center"}
+
+## ⚙️Colorer les parenthèses
+
+<br>
+
+**Tools ▶️ Global Options ▶️ Code ▶️ Display**
+
+![](img/r_intro_14x.png){fig-align="center"}
+
+## 🫵Proportions
+
+<br>
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `prop.table(penguins_count)`
+
+-   `prop.table(penguins_count, margin = 1)`
+
+-   `prop.table(penguins_count, margin = 2)`
+
+**Comment les proportions sont-elles calculées dans chacun des cas ?**
+
+## ✅Proportions
+
+<br>
+
+![](img/r_intro_14y.png){fig-align="center"}
+
+## ✅Proportions
+
+<br>
+
+Les proportions du tableau de contingence peuvent être calculées à l'aide des fonctions `sum()`, `rowSums()` et `colSums()` :
+
+```{r}
+#| include: false
+penguins_count <- table(penguins$species, penguins$island)
+```
+
+```{r}
+prop.table(penguins_count, margin = NULL)
+penguins_count / sum(penguins_count)
+```
+
+## ✅Proportions
+
+<br>
+
+Les proportions du tableau de contingence peuvent être calculées à l'aide des fonctions `sum()`, `rowSums()` et `colSums()` :
+
+```{r}
+prop.table(penguins_count, margin = 1)
+penguins_count / rowSums(penguins_count)
+```
+
+## ✅Proportions
+
+<br>
+
+Les proportions du tableau de contingence peuvent être calculées à l'aide des fonctions `sum()`, `rowSums()` et `colSums()` :
+
+```{r}
+prop.table(penguins_count, margin = 2)
+penguins_count / colSums(penguins_count)
+```
+
+## 🫵Arrondir des valeurs numériques
+
+<br>
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `round(prop.table(penguins_count))`
+
+-   `round(prop.table(penguins_count), digits = 2)`
+
+-   `floor(prop.table(penguins_count))`
+
+-   `ceiling(prop.table(penguins_count))`
+
+**Quelles sont les différences entre ces commandes ?**
+
+## ✅Arrondir des valeurs numériques
+
+<br>
+
+```{r}
+#| include: false
+penguins_count <- table(penguins$species, penguins$island)
+```
+
+```{r}
+prop.table(penguins_count)
+round(prop.table(penguins_count))
+round(prop.table(penguins_count), digits = 2)
+```
+
+## ✅Arrondir des valeurs numériques
+
+<br>
+
+```{r}
+prop.table(penguins_count)
+floor(prop.table(penguins_count))
+ceiling(prop.table(penguins_count))
+```
+
+## 🫵Exporter des données
+
+<br>
+
+Dans le script, taper et exécuter la commande suivante :
+
+```{r}
+#| eval: false
+write.csv(x = penguins_count, 
+          file = "04_results/penguins_count.csv")
+```
+
+Vérifier que `write.csv()` a bien fonctionné en tapant et en exécutant la commande suivante dans la console :
+
+```{r}
+#| eval: false
+read.csv(file = "04_results/penguins_count.csv")
+```
+
+Pour éviter l'ajout d"un `X` comme titre de la 1^ère^ colonne lors de l'importation, utiliser la commande suivante dans la console :
+
+```{r}
+#| eval: false
+read.csv(file = "04_results/penguins_count.csv",
+         col.names = c("Species", "Biscoe", "Dream", "Torgersen"))
+```
+
+## ✅Exporter des données
+
+<br>
+
+![](img/r_intro_14z.png){fig-align="center"}
