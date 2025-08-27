@@ -322,6 +322,11 @@ Dans la console, taper et exécuter les commandes suivantes :
 
 ![](img/r_intro_15a.png){fig-align="center"}
 
+```{r}
+# Autre possibilité :
+range(penguins$body_mass_g, na.rm = TRUE)
+```
+
 ## 🫵Extraire les statistiques
 
 <br>
@@ -512,6 +517,60 @@ prop.table(penguins_count)
 floor(prop.table(penguins_count))
 ceiling(prop.table(penguins_count))
 ```
+
+## ❓Correspondance "explicite" et "implicite"
+
+<br>
+
+Les arguments d'une fonction peuvent être déclarés par :
+
+-   **correspondance explicite (nom + valeur)**
+
+```{r}
+#| eval: false
+round(x = prop.table(x = penguins_count), digits = 2)
+```
+
+-   **correspondance implicite (valeur)**
+
+```{r}
+#| eval: false
+round(prop.table(penguins_count), 2)
+```
+
+## 🫵Correspondance "explicite" et "implicite"
+
+<br>
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `log(x = 16, base = 2)`
+
+-   `log(x = 16, 2)`
+
+-   `log(16, base = 2)`
+
+-   `log(16, 2)`
+
+-   `log(2, 16)`
+
+**Que remarquez-vous ?**
+
+## ✅Correspondance "explicite" et "implicite"
+
+<br>
+
+```{r}
+log(x = 16, base = 2)
+log(x = 16, 2)
+log(16, base = 2)
+log(16, 2)
+log(2, 16)
+```
+
+::: {.callout-caution appearance="simple"}
+Dans une déclaration **implicite**, l'**ordre** des valeurs des arguments est déterminant.
+:::
 
 ## 🫵Exporter des données
 

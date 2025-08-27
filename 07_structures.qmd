@@ -1,0 +1,473 @@
+# Structures et types de données
+
+## ❓Vecteur
+
+<br>
+
+-   Objet à **une dimension**
+
+-   Tous les éléments d'un vecteur sont d'**un seul et même type**.
+
+## 🫵Créer un vecteur
+
+<br>
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `nombres <- c(1, 3, 5)`
+
+-   `voyelles <- c("a", "e", "i", "o", "u", "y")`
+
+Utilisez les commandes suivantes pour ces deux objets :
+
+-   `dim()`
+
+-   `typeof()`
+
+-   `class()`
+
+-   `length()`
+
+## ✅Créer un vecteur
+
+<br>
+
+![](img/r_intro_15b.png){fig-align="center"}
+
+## 🫵Vecteurs numériques
+
+<br>
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `nb_entiers <- c(1L, 2L, 3L)`
+
+-   `nb_decimaux <- c(1.5, 2.5, 3.5)`
+
+-   `nb_complexes <- c(1 + 1i, 2 + 1i, 3 + 1i)`
+
+Utilisez les commandes suivantes pour ces vecteurs numériques :
+
+-   `typeof()`
+
+-   `class()`
+
+-   `mode()`
+
+## ✅Vecteurs numériques
+
+<br>
+
+![](img/r_intro_15c.png){fig-align="center"}
+
+## 🫵Vecteurs numériques
+
+<br>
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `c(1, 2, 3, 4, 5)`
+
+-   `1:5`
+
+-   `seq(from = 1, to = 5, step = 1)`
+
+-   `7:1`
+
+-   `seq(7, 1, -1)`
+
+-   `seq(1, 10, length.out = 5)`
+
+## ✅Vecteurs numériques
+
+<br>
+
+```{r}
+c(1, 2, 3, 4, 5)
+1:5
+seq(from = 1, to = 5, by = 2)
+7:1
+seq(7, 1, -1)
+seq(1, 10, length.out = 5)
+```
+
+## 🫵Ajouter des éléments à un vecteur
+
+<br>
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `nb_entiers`
+
+-   `c(nb_entiers, seq(7, 13, 2))`
+
+## ✅Ajouter des éléments à un vecteur
+
+<br>
+
+```{r}
+#| include: false
+nb_entiers <- c(1L, 2L, 3L)
+```
+
+```{r}
+nb_entiers
+c(nb_entiers, seq(7, 13, 2))
+```
+
+## 🫵Vectorisation d'un calcul
+
+<br>
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `nb_1 <- 1:5`
+
+-   `nb_1 * 2`
+
+**Comment le calcul `nb_1 * 2`** **est-il effectué ?**
+
+## ✅Vectorisation d'un calcul
+
+<br>
+
+Dans R, le calcul est **vectorisé** :
+
+![](img/r_intro_15i.png){fig-align="center"}
+
+## ✅Vectorisation d'un calcul
+
+<br>
+
+Quand les objets impliqués dans le calcul sont de longueurs différentes, l'objet ayant la longueur la plus courte est **recyclé** :
+
+![](img/r_intro_15j.png){fig-align="center"}
+
+## ✅Vectorisation d'un calcul
+
+<br>
+
+Quand les objets impliqués dans le calcul sont de longueurs différentes, l'objet ayant la longueur la plus courte est **recyclé** :
+
+![](img/r_intro_15k.png){fig-align="center"}
+
+## ✅Vectorisation d'un calcul
+
+<br>
+
+Quand les objets impliqués dans le calcul sont de longueurs différentes, l'objet ayant la longueur la plus courte est **recyclé** :
+
+![](img/r_intro_15l.png){fig-align="center"}
+
+## 🫵Vectorisation d'un calcul
+
+<br>
+
+Dans la console, taper et exécuter la commande suivante :
+
+`1:5 + 1:4 + 1:3 + 1:2 + 1`
+
+**Comment le calcul est-il effectué ?**
+
+## ✅Vectorisation d'un calcul
+
+<br>
+
+![](img/r_intro_15m.png){fig-align="center"}
+
+## ✅Vectorisation d'un calcul
+
+<br>
+
+![](img/r_intro_15n.png){fig-align="center"}
+
+<br>
+
+## ✅Vectorisation d'un calcul
+
+<br>
+
+![](img/r_intro_15o.png){fig-align="center"}
+
+## ✅Vectorisation d'un calcul
+
+<br>
+
+![](img/r_intro_15p.png){fig-align="center"}
+
+## ✅Vectorisation d'un calcul
+
+<br>
+
+![](img/r_intro_15q.png){fig-align="center"}
+
+## 🫵Vecteur nommé
+
+<br>
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `(couleurs <- c("red", "blue"))`
+
+-   `names(couleurs)`
+
+-   `names(couleurs) <- c("rouge", "bleu")`
+
+-   `names(couleurs)`
+
+-   `couleurs`
+
+-   `unname(couleurs)`
+
+-   `(couleurs <- c("rouge" = "red", "bleu" = "blue"))`
+
+**Que retournent ces différentes commandes ?**
+
+## ✅Vecteur nommé
+
+<br>
+
+```{r}
+(couleurs <- c("red", "blue"))
+names(couleurs)
+names(couleurs) <- c("rouge", "bleu")
+names(couleurs)
+couleurs
+unname(couleurs)
+(couleurs <- c("rouge" = "red", "bleu" = "blue"))
+```
+
+## ⚙️Aperçu des couleurs
+
+<br>
+
+**Tools ▶️ Global Options ▶️ Code ▶️ Display**
+
+![](img/r_intro_15d.png){fig-align="center"}
+
+## 🫵Extraire les éléments d'un vecteur
+
+<br>
+
+Les crochets **`[]`** permettent d'extraire (ou supprimer) un ou plusieurs éléments d'un vecteur.
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `(suite_nb <- -3:3)`
+
+-   `suite_nb[4]`
+
+-   `suite_nb[3:5]`
+
+-   `suite_nb[c(2, 4, 6)]`
+
+-   `suite_nb[seq(2, 6, 2)]`
+
+-   `suite_nb[c(1, 3:5, 7)]`
+
+## ✅Extraire les éléments d'un vecteur
+
+<br>
+
+![](img/r_intro_15e.png){fig-align="center"}
+
+## 🫵Supprimer les éléments d'un vecteur
+
+<br>
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `suite_nb[-4]`
+
+-   `suite_nb[-3:5]`
+
+-   `suite_nb[-c(3:5)]`
+
+-   `suite_nb[-(3:5)]`
+
+-   `suite_nb[-c(2, 4, 6)]`
+
+-   `suite_nb[-seq(2, 6, 2)]`
+
+-   `suite_nb[-c(1, 3:5, 7)]`
+
+## ✅Supprimer les éléments d'un vecteur
+
+<br>
+
+![](img/r_intro_15f.png){fig-align="center"}
+
+## 🫵Extraire les éléments d'un vecteur nommé
+
+<br>
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `names(couleurs)`
+
+-   `couleurs[1]`
+
+-   `couleurs["red"]`
+
+-   `couleurs["rouge"]`
+
+-   `couleurs[[1]]`
+
+-   `couleurs[["rouge"]]`
+
+**Que retournent ces différentes commandes ?**
+
+## ✅Extraire les éléments d'un vecteur nommé
+
+<br>
+
+```{r}
+#| error: true
+names(couleurs)
+couleurs[1]
+couleurs["red"]
+couleurs["rouge"]
+couleurs[[1]]
+couleurs[["rouge"]]
+```
+
+## ❓Liste
+
+<br>
+
+-   Objet à **une dimension**
+
+-   Peut contenir des éléments de **différents types**
+
+## 🫵Créer une liste
+
+<br>
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `nombres <- 1:10`
+
+-   `lettres <- c("a", "b", "c")`
+
+-   `(liste_1 <- list(nombres, lettres))`
+
+-   `(liste_2 <- list(nombres = nombres, lettres = lettres)`
+
+**Quelle est la différence entre `liste_1` et `liste_2` ?**
+
+## ✅Créer une liste
+
+<br>
+
+```{r}
+nombres <- 1:10
+lettres <- c("a", "b", "c")
+```
+
+<br>
+
+```{r}
+(liste_1 <- list(nombres, lettres))
+(liste_2 <- list(nombres = nombres, lettres = lettres))
+```
+
+## 🫵Accéder aux éléments d'une liste
+
+<br>
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `liste_1[1]`
+
+-   `liste_1[[1]]`
+
+-   `liste_1[[1]][4]`
+
+## ✅Accéder aux éléments d'une liste
+
+<br>
+
+![](img/r_intro_15g.png){fig-align="center"}
+
+## 🫵Accéder aux éléments d'une liste
+
+<br>
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `liste_2[2]`
+
+-   `liste_2$lettres`
+
+-   `liste_2$lettres[-3]`
+
+## ✅Accéder aux éléments d'une liste
+
+<br>
+
+![](img/r_intro_15h.png){fig-align="center"}
+
+## 🫵Description d'une liste
+
+<br>
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `str(liste_1)`
+
+-   `str(liste_2)`
+
+-   `summary(liste_1)`
+
+-   `summary(liste_2)`
+
+**Que remarquez-vous ?**
+
+## ✅Description d'une liste
+
+<br>
+
+```{r}
+str(liste_1)
+str(liste_2)
+summary(liste_1)
+summary(liste_2)
+```
+
+## 🫵La fonction `lapply()`
+
+<br>
+
+La fonction `lapply()` permet d'appliquer (*apply*) une fonction à l'ensemble des éléments d'une liste ([*l*]{.underline}*ist*).
+
+Dans la console, taper et exécuter les commandes suivantes :
+
+-   `lapply(X = liste_1, FUN = length)`
+
+-   `lapply(X = liste_1, FUN = mean)`
+
+-   `lapply(liste_1, summary)`
+
+**Que remarquez-vous ?**
+
+## ✅La fonction `lapply()`
+
+<br>
+
+```{r}
+lapply(X = liste_1, FUN = length)
+lapply(X = liste_1, FUN = mean)
+lapply(liste_2, summary)
+```
+
+-   `class()`
+
+-   `mode()`
+
+-   `length()`
+
+-   `lengths()`
+
+-   `names()`
+
+-   `attributes()`

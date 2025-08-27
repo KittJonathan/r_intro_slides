@@ -1692,7 +1692,14 @@ Jonathan Kitt <a href="https://orcid.org/0000-0002-3817-4538" class="quarto-titl
 <h2>✅Extraire les valeurs extrêmes</h2>
 <p><br></p>
 
-<img data-src="img/r_intro_15a.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<img data-src="img/r_intro_15a.png" class="quarto-figure quarto-figure-center r-stretch"><div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href=""></a><span class="co"># Autre possibilité :</span></span>
+<span id="cb41-2"><a href=""></a><span class="fu">range</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2700 6300</code></pre>
+</div>
+</div>
+</section>
 <section id="extraire-les-statistiques" class="slide level2">
 <h2>🫵Extraire les statistiques</h2>
 <p><br></p>
@@ -1710,24 +1717,24 @@ Jonathan Kitt <a href="https://orcid.org/0000-0002-3817-4538" class="quarto-titl
 <h2>✅Extraire les statistiques</h2>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href=""></a><span class="fu">quantile</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href=""></a><span class="fu">quantile</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  0%  25%  50%  75% 100% 
 2700 3550 4050 4750 6300 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href=""></a><span class="fu">mean</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href=""></a><span class="fu">mean</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 4201.754</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href=""></a><span class="fu">median</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">na.rm =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href=""></a><span class="fu">median</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">na.rm =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 4050</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href=""></a><span class="fu">var</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">na.rm =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href=""></a><span class="fu">var</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">na.rm =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 643131.1</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href=""></a><span class="fu">sd</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">na.rm =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href=""></a><span class="fu">sd</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">na.rm =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 801.9545</code></pre>
 </div>
@@ -1748,7 +1755,7 @@ Jonathan Kitt <a href="https://orcid.org/0000-0002-3817-4538" class="quarto-titl
 <h2>✅Compter les observations</h2>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href=""></a><span class="fu">table</span>(penguins<span class="sc">$</span>species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href=""></a><span class="fu">table</span>(penguins<span class="sc">$</span>species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
    Adelie Chinstrap    Gentoo 
@@ -1756,7 +1763,7 @@ Jonathan Kitt <a href="https://orcid.org/0000-0002-3817-4538" class="quarto-titl
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href=""></a><span class="fu">table</span>(penguins<span class="sc">$</span>species, penguins<span class="sc">$</span>island)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href=""></a><span class="fu">table</span>(penguins<span class="sc">$</span>species, penguins<span class="sc">$</span>island)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>           
             Biscoe Dream Torgersen
@@ -1815,7 +1822,7 @@ Jonathan Kitt <a href="https://orcid.org/0000-0002-3817-4538" class="quarto-titl
 <p><br></p>
 <p>Les proportions du tableau de contingence peuvent être calculées à l’aide des fonctions <code>sum()</code>, <code>rowSums()</code> et <code>colSums()</code> :</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href=""></a><span class="fu">prop.table</span>(penguins_count, <span class="at">margin =</span> <span class="cn">NULL</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href=""></a><span class="fu">prop.table</span>(penguins_count, <span class="at">margin =</span> <span class="cn">NULL</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>           
                Biscoe     Dream Torgersen
@@ -1823,7 +1830,7 @@ Jonathan Kitt <a href="https://orcid.org/0000-0002-3817-4538" class="quarto-titl
   Chinstrap 0.0000000 0.1976744 0.0000000
   Gentoo    0.3604651 0.0000000 0.0000000</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href=""></a>penguins_count <span class="sc">/</span> <span class="fu">sum</span>(penguins_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href=""></a>penguins_count <span class="sc">/</span> <span class="fu">sum</span>(penguins_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>           
                Biscoe     Dream Torgersen
@@ -1838,7 +1845,7 @@ Jonathan Kitt <a href="https://orcid.org/0000-0002-3817-4538" class="quarto-titl
 <p><br></p>
 <p>Les proportions du tableau de contingence peuvent être calculées à l’aide des fonctions <code>sum()</code>, <code>rowSums()</code> et <code>colSums()</code> :</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href=""></a><span class="fu">prop.table</span>(penguins_count, <span class="at">margin =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href=""></a><span class="fu">prop.table</span>(penguins_count, <span class="at">margin =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>           
                Biscoe     Dream Torgersen
@@ -1846,7 +1853,7 @@ Jonathan Kitt <a href="https://orcid.org/0000-0002-3817-4538" class="quarto-titl
   Chinstrap 0.0000000 1.0000000 0.0000000
   Gentoo    1.0000000 0.0000000 0.0000000</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href=""></a>penguins_count <span class="sc">/</span> <span class="fu">rowSums</span>(penguins_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href=""></a>penguins_count <span class="sc">/</span> <span class="fu">rowSums</span>(penguins_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>           
                Biscoe     Dream Torgersen
@@ -1861,7 +1868,7 @@ Jonathan Kitt <a href="https://orcid.org/0000-0002-3817-4538" class="quarto-titl
 <p><br></p>
 <p>Les proportions du tableau de contingence peuvent être calculées à l’aide des fonctions <code>sum()</code>, <code>rowSums()</code> et <code>colSums()</code> :</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href=""></a><span class="fu">prop.table</span>(penguins_count, <span class="at">margin =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href=""></a><span class="fu">prop.table</span>(penguins_count, <span class="at">margin =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>           
                Biscoe     Dream Torgersen
@@ -1869,7 +1876,7 @@ Jonathan Kitt <a href="https://orcid.org/0000-0002-3817-4538" class="quarto-titl
   Chinstrap 0.0000000 0.5483871 0.0000000
   Gentoo    0.7380952 0.0000000 0.0000000</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href=""></a>penguins_count <span class="sc">/</span> <span class="fu">colSums</span>(penguins_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href=""></a>penguins_count <span class="sc">/</span> <span class="fu">colSums</span>(penguins_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>           
                Biscoe     Dream Torgersen
@@ -1895,7 +1902,7 @@ Jonathan Kitt <a href="https://orcid.org/0000-0002-3817-4538" class="quarto-titl
 <h2>✅Arrondir des valeurs numériques</h2>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href=""></a><span class="fu">prop.table</span>(penguins_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href=""></a><span class="fu">prop.table</span>(penguins_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>           
                Biscoe     Dream Torgersen
@@ -1903,7 +1910,7 @@ Jonathan Kitt <a href="https://orcid.org/0000-0002-3817-4538" class="quarto-titl
   Chinstrap 0.0000000 0.1976744 0.0000000
   Gentoo    0.3604651 0.0000000 0.0000000</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href=""></a><span class="fu">round</span>(<span class="fu">prop.table</span>(penguins_count))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href=""></a><span class="fu">round</span>(<span class="fu">prop.table</span>(penguins_count))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>           
             Biscoe Dream Torgersen
@@ -1911,7 +1918,7 @@ Jonathan Kitt <a href="https://orcid.org/0000-0002-3817-4538" class="quarto-titl
   Chinstrap      0     0         0
   Gentoo         0     0         0</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href=""></a><span class="fu">round</span>(<span class="fu">prop.table</span>(penguins_count), <span class="at">digits =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href=""></a><span class="fu">round</span>(<span class="fu">prop.table</span>(penguins_count), <span class="at">digits =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>           
             Biscoe Dream Torgersen
@@ -1925,7 +1932,7 @@ Jonathan Kitt <a href="https://orcid.org/0000-0002-3817-4538" class="quarto-titl
 <h2>✅Arrondir des valeurs numériques</h2>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href=""></a><span class="fu">prop.table</span>(penguins_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href=""></a><span class="fu">prop.table</span>(penguins_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>           
                Biscoe     Dream Torgersen
@@ -1933,7 +1940,7 @@ Jonathan Kitt <a href="https://orcid.org/0000-0002-3817-4538" class="quarto-titl
   Chinstrap 0.0000000 0.1976744 0.0000000
   Gentoo    0.3604651 0.0000000 0.0000000</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href=""></a><span class="fu">floor</span>(<span class="fu">prop.table</span>(penguins_count))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href=""></a><span class="fu">floor</span>(<span class="fu">prop.table</span>(penguins_count))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>           
             Biscoe Dream Torgersen
@@ -1941,7 +1948,7 @@ Jonathan Kitt <a href="https://orcid.org/0000-0002-3817-4538" class="quarto-titl
   Chinstrap      0     0         0
   Gentoo         0     0         0</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href=""></a><span class="fu">ceiling</span>(<span class="fu">prop.table</span>(penguins_count))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href=""></a><span class="fu">ceiling</span>(<span class="fu">prop.table</span>(penguins_count))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>           
             Biscoe Dream Torgersen
@@ -1951,30 +1958,594 @@ Jonathan Kitt <a href="https://orcid.org/0000-0002-3817-4538" class="quarto-titl
 </div>
 </div>
 </section>
+<section id="correspondance-explicite-et-implicite" class="slide level2">
+<h2>❓Correspondance “explicite” et “implicite”</h2>
+<p><br></p>
+<p>Les arguments d’une fonction peuvent être déclarés par :</p>
+<ul>
+<li><strong>correspondance explicite (nom + valeur)</strong></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb81"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a href=""></a><span class="fu">round</span>(<span class="at">x =</span> <span class="fu">prop.table</span>(<span class="at">x =</span> penguins_count), <span class="at">digits =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><strong>correspondance implicite (valeur)</strong></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb82"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb82-1"><a href=""></a><span class="fu">round</span>(<span class="fu">prop.table</span>(penguins_count), <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="correspondance-explicite-et-implicite-1" class="slide level2">
+<h2>🫵Correspondance “explicite” et “implicite”</h2>
+<p><br></p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>log(x = 16, base = 2)</code></p></li>
+<li><p><code>log(x = 16, 2)</code></p></li>
+<li><p><code>log(16, base = 2)</code></p></li>
+<li><p><code>log(16, 2)</code></p></li>
+<li><p><code>log(2, 16)</code></p></li>
+</ul>
+<p><strong>Que remarquez-vous ?</strong></p>
+</section>
+<section id="correspondance-explicite-et-implicite-2" class="slide level2">
+<h2>✅Correspondance “explicite” et “implicite”</h2>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a href=""></a><span class="fu">log</span>(<span class="at">x =</span> <span class="dv">16</span>, <span class="at">base =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb85"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb85-1"><a href=""></a><span class="fu">log</span>(<span class="at">x =</span> <span class="dv">16</span>, <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb87"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb87-1"><a href=""></a><span class="fu">log</span>(<span class="dv">16</span>, <span class="at">base =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb89"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb89-1"><a href=""></a><span class="fu">log</span>(<span class="dv">16</span>, <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb91"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb91-1"><a href=""></a><span class="fu">log</span>(<span class="dv">2</span>, <span class="dv">16</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.25</code></pre>
+</div>
+</div>
+<div class="callout callout-caution callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Dans une déclaration <strong>implicite</strong>, l’<strong>ordre</strong> des valeurs des arguments est déterminant.</p>
+</div>
+</div>
+</div>
+</section>
 <section id="exporter-des-données" class="slide level2">
 <h2>🫵Exporter des données</h2>
 <p><br></p>
 <p>Dans le script, taper et exécuter la commande suivante :</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href=""></a><span class="fu">write.csv</span>(<span class="at">x =</span> penguins_count, </span>
-<span id="cb79-2"><a href=""></a>          <span class="at">file =</span> <span class="st">"04_results/penguins_count.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb93"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb93-1"><a href=""></a><span class="fu">write.csv</span>(<span class="at">x =</span> penguins_count, </span>
+<span id="cb93-2"><a href=""></a>          <span class="at">file =</span> <span class="st">"04_results/penguins_count.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Vérifier que <code>write.csv()</code> a bien fonctionné en tapant et en exécutant la commande suivante dans la console :</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a href=""></a><span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"04_results/penguins_count.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb94"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb94-1"><a href=""></a><span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"04_results/penguins_count.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Pour éviter l’ajout d”un <code>X</code> comme titre de la 1<sup>ère</sup> colonne lors de l’importation, utiliser la commande suivante dans la console :</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb81"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a href=""></a><span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"04_results/penguins_count.csv"</span>,</span>
-<span id="cb81-2"><a href=""></a>         <span class="at">col.names =</span> <span class="fu">c</span>(<span class="st">"Species"</span>, <span class="st">"Biscoe"</span>, <span class="st">"Dream"</span>, <span class="st">"Torgersen"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb95"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb95-1"><a href=""></a><span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"04_results/penguins_count.csv"</span>,</span>
+<span id="cb95-2"><a href=""></a>         <span class="at">col.names =</span> <span class="fu">c</span>(<span class="st">"Species"</span>, <span class="st">"Biscoe"</span>, <span class="st">"Dream"</span>, <span class="st">"Torgersen"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="exporter-des-données-1" class="slide level2">
 <h2>✅Exporter des données</h2>
 <p><br></p>
 
-
 <img data-src="img/r_intro_14z.png" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+<section>
+<section id="structures-et-types-de-données" class="title-slide slide level1 center">
+<h1>Structures et types de données</h1>
+
+</section>
+<section id="vecteur" class="slide level2">
+<h2>❓Vecteur</h2>
+<p><br></p>
+<ul>
+<li><p>Objet à <strong>une dimension</strong></p></li>
+<li><p>Tous les éléments d’un vecteur sont d’<strong>un seul et même type</strong>.</p></li>
+</ul>
+</section>
+<section id="créer-un-vecteur" class="slide level2">
+<h2>🫵Créer un vecteur</h2>
+<p><br></p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>nombres &lt;- c(1, 3, 5)</code></p></li>
+<li><p><code>voyelles &lt;- c("a", "e", "i", "o", "u", "y")</code></p></li>
+</ul>
+<p>Utilisez les commandes suivantes pour ces deux objets :</p>
+<ul>
+<li><p><code>dim()</code></p></li>
+<li><p><code>typeof()</code></p></li>
+<li><p><code>class()</code></p></li>
+<li><p><code>length()</code></p></li>
+</ul>
+</section>
+<section id="créer-un-vecteur-1" class="slide level2">
+<h2>✅Créer un vecteur</h2>
+<p><br></p>
+
+<img data-src="img/r_intro_15b.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="vecteurs-numériques" class="slide level2">
+<h2>🫵Vecteurs numériques</h2>
+<p><br></p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>nb_entiers &lt;- c(1L, 2L, 3L)</code></p></li>
+<li><p><code>nb_decimaux &lt;- c(1.5, 2.5, 3.5)</code></p></li>
+<li><p><code>nb_complexes &lt;- c(1 + 1i, 2 + 1i, 3 + 1i)</code></p></li>
+</ul>
+<p>Utilisez les commandes suivantes pour ces vecteurs numériques :</p>
+<ul>
+<li><p><code>typeof()</code></p></li>
+<li><p><code>class()</code></p></li>
+<li><p><code>mode()</code></p></li>
+</ul>
+</section>
+<section id="vecteurs-numériques-1" class="slide level2">
+<h2>✅Vecteurs numériques</h2>
+<p><br></p>
+
+<img data-src="img/r_intro_15c.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="vecteurs-numériques-2" class="slide level2">
+<h2>🫵Vecteurs numériques</h2>
+<p><br></p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>c(1, 2, 3, 4, 5)</code></p></li>
+<li><p><code>1:5</code></p></li>
+<li><p><code>seq(from = 1, to = 5, step = 1)</code></p></li>
+<li><p><code>7:1</code></p></li>
+<li><p><code>seq(7, 1, -1)</code></p></li>
+<li><p><code>seq(1, 10, length.out = 5)</code></p></li>
+</ul>
+</section>
+<section id="vecteurs-numériques-3" class="slide level2">
+<h2>✅Vecteurs numériques</h2>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb96"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb96-1"><a href=""></a><span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1 2 3 4 5</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb98"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb98-1"><a href=""></a><span class="dv">1</span><span class="sc">:</span><span class="dv">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1 2 3 4 5</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb100"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb100-1"><a href=""></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">5</span>, <span class="at">by =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1 3 5</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb102"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb102-1"><a href=""></a><span class="dv">7</span><span class="sc">:</span><span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 7 6 5 4 3 2 1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb104"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb104-1"><a href=""></a><span class="fu">seq</span>(<span class="dv">7</span>, <span class="dv">1</span>, <span class="sc">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 7 6 5 4 3 2 1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb106"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb106-1"><a href=""></a><span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">10</span>, <span class="at">length.out =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  1.00  3.25  5.50  7.75 10.00</code></pre>
+</div>
+</div>
+</section>
+<section id="ajouter-des-éléments-à-un-vecteur" class="slide level2">
+<h2>🫵Ajouter des éléments à un vecteur</h2>
+<p><br></p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>nb_entiers</code></p></li>
+<li><p><code>c(nb_entiers, seq(7, 13, 2))</code></p></li>
+</ul>
+</section>
+<section id="ajouter-des-éléments-à-un-vecteur-1" class="slide level2">
+<h2>✅Ajouter des éléments à un vecteur</h2>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb108"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb108-1"><a href=""></a>nb_entiers</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1 2 3</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb110"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb110-1"><a href=""></a><span class="fu">c</span>(nb_entiers, <span class="fu">seq</span>(<span class="dv">7</span>, <span class="dv">13</span>, <span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  1  2  3  7  9 11 13</code></pre>
+</div>
+</div>
+</section>
+<section id="vectorisation-dun-calcul" class="slide level2">
+<h2>🫵Vectorisation d’un calcul</h2>
+<p><br></p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>nb_1 &lt;- 1:5</code></p></li>
+<li><p><code>nb_1 * 2</code></p></li>
+</ul>
+<p><strong>Comment le calcul <code>nb_1 * 2</code></strong> <strong>est-il effectué ?</strong></p>
+</section>
+<section id="vectorisation-dun-calcul-1" class="slide level2">
+<h2>✅Vectorisation d’un calcul</h2>
+<p><br></p>
+<p>Dans R, le calcul est <strong>vectorisé</strong> :</p>
+
+<img data-src="img/r_intro_15i.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="vectorisation-dun-calcul-2" class="slide level2">
+<h2>✅Vectorisation d’un calcul</h2>
+<p><br></p>
+<p>Quand les objets impliqués dans le calcul sont de longueurs différentes, l’objet ayant la longueur la plus courte est <strong>recyclé</strong> :</p>
+
+<img data-src="img/r_intro_15j.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="vectorisation-dun-calcul-3" class="slide level2">
+<h2>✅Vectorisation d’un calcul</h2>
+<p><br></p>
+<p>Quand les objets impliqués dans le calcul sont de longueurs différentes, l’objet ayant la longueur la plus courte est <strong>recyclé</strong> :</p>
+
+<img data-src="img/r_intro_15k.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="vectorisation-dun-calcul-4" class="slide level2">
+<h2>✅Vectorisation d’un calcul</h2>
+<p><br></p>
+<p>Quand les objets impliqués dans le calcul sont de longueurs différentes, l’objet ayant la longueur la plus courte est <strong>recyclé</strong> :</p>
+
+<img data-src="img/r_intro_15l.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="vectorisation-dun-calcul-5" class="slide level2">
+<h2>🫵Vectorisation d’un calcul</h2>
+<p><br></p>
+<p>Dans la console, taper et exécuter la commande suivante :</p>
+<p><code>1:5 + 1:4 + 1:3 + 1:2 + 1</code></p>
+<p><strong>Comment le calcul est-il effectué ?</strong></p>
+</section>
+<section id="vectorisation-dun-calcul-6" class="slide level2">
+<h2>✅Vectorisation d’un calcul</h2>
+<p><br></p>
+
+<img data-src="img/r_intro_15m.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="vectorisation-dun-calcul-7" class="slide level2">
+<h2>✅Vectorisation d’un calcul</h2>
+<p><br></p>
+
+<img data-src="img/r_intro_15n.png" class="quarto-figure quarto-figure-center r-stretch"><p><br></p>
+</section>
+<section id="vectorisation-dun-calcul-8" class="slide level2">
+<h2>✅Vectorisation d’un calcul</h2>
+<p><br></p>
+
+<img data-src="img/r_intro_15o.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="vectorisation-dun-calcul-9" class="slide level2">
+<h2>✅Vectorisation d’un calcul</h2>
+<p><br></p>
+
+<img data-src="img/r_intro_15p.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="vectorisation-dun-calcul-10" class="slide level2">
+<h2>✅Vectorisation d’un calcul</h2>
+<p><br></p>
+
+<img data-src="img/r_intro_15q.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="vecteur-nommé" class="slide level2">
+<h2>🫵Vecteur nommé</h2>
+<p><br></p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>(couleurs &lt;- c("red", "blue"))</code></p></li>
+<li><p><code>names(couleurs)</code></p></li>
+<li><p><code>names(couleurs) &lt;- c("rouge", "bleu")</code></p></li>
+<li><p><code>names(couleurs)</code></p></li>
+<li><p><code>couleurs</code></p></li>
+<li><p><code>unname(couleurs)</code></p></li>
+<li><p><code>(couleurs &lt;- c("rouge" = "red", "bleu" = "blue"))</code></p></li>
+</ul>
+<p><strong>Que retournent ces différentes commandes ?</strong></p>
+</section>
+<section id="vecteur-nommé-1" class="slide level2">
+<h2>✅Vecteur nommé</h2>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb112"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb112-1"><a href=""></a>(couleurs <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"red"</span>, <span class="st">"blue"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "red"  "blue"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb114"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb114-1"><a href=""></a><span class="fu">names</span>(couleurs)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>NULL</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb116"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb116-1"><a href=""></a><span class="fu">names</span>(couleurs) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"rouge"</span>, <span class="st">"bleu"</span>)</span>
+<span id="cb116-2"><a href=""></a><span class="fu">names</span>(couleurs)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "rouge" "bleu" </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb118"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb118-1"><a href=""></a>couleurs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> rouge   bleu 
+ "red" "blue" </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb120"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb120-1"><a href=""></a><span class="fu">unname</span>(couleurs)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "red"  "blue"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb122"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb122-1"><a href=""></a>(couleurs <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"rouge"</span> <span class="ot">=</span> <span class="st">"red"</span>, <span class="st">"bleu"</span> <span class="ot">=</span> <span class="st">"blue"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> rouge   bleu 
+ "red" "blue" </code></pre>
+</div>
+</div>
+</section>
+<section id="aperçu-des-couleurs" class="slide level2">
+<h2>⚙️Aperçu des couleurs</h2>
+<p><br></p>
+<p><strong>Tools ▶️ Global Options ▶️ Code ▶️ Display</strong></p>
+
+<img data-src="img/r_intro_15d.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="extraire-les-éléments-dun-vecteur" class="slide level2">
+<h2>🫵Extraire les éléments d’un vecteur</h2>
+<p><br></p>
+<p>Les crochets <strong><code>[]</code></strong> permettent d’extraire (ou supprimer) un ou plusieurs éléments d’un vecteur.</p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>(suite_nb &lt;- -3:3)</code></p></li>
+<li><p><code>suite_nb[4]</code></p></li>
+<li><p><code>suite_nb[3:5]</code></p></li>
+<li><p><code>suite_nb[c(2, 4, 6)]</code></p></li>
+<li><p><code>suite_nb[seq(2, 6, 2)]</code></p></li>
+<li><p><code>suite_nb[c(1, 3:5, 7)]</code></p></li>
+</ul>
+</section>
+<section id="extraire-les-éléments-dun-vecteur-1" class="slide level2">
+<h2>✅Extraire les éléments d’un vecteur</h2>
+<p><br></p>
+
+<img data-src="img/r_intro_15e.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="supprimer-les-éléments-dun-vecteur" class="slide level2">
+<h2>🫵Supprimer les éléments d’un vecteur</h2>
+<p><br></p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>suite_nb[-4]</code></p></li>
+<li><p><code>suite_nb[-3:5]</code></p></li>
+<li><p><code>suite_nb[-c(3:5)]</code></p></li>
+<li><p><code>suite_nb[-(3:5)]</code></p></li>
+<li><p><code>suite_nb[-c(2, 4, 6)]</code></p></li>
+<li><p><code>suite_nb[-seq(2, 6, 2)]</code></p></li>
+<li><p><code>suite_nb[-c(1, 3:5, 7)]</code></p></li>
+</ul>
+</section>
+<section id="supprimer-les-éléments-dun-vecteur-1" class="slide level2">
+<h2>✅Supprimer les éléments d’un vecteur</h2>
+<p><br></p>
+
+<img data-src="img/r_intro_15f.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="extraire-les-éléments-dun-vecteur-nommé" class="slide level2">
+<h2>🫵Extraire les éléments d’un vecteur nommé</h2>
+<p><br></p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>names(couleurs)</code></p></li>
+<li><p><code>couleurs[1]</code></p></li>
+<li><p><code>couleurs["red"]</code></p></li>
+<li><p><code>couleurs["rouge"]</code></p></li>
+<li><p><code>couleurs[[1]]</code></p></li>
+<li><p><code>couleurs[["rouge"]]</code></p></li>
+</ul>
+<p><strong>Que retournent ces différentes commandes ?</strong></p>
+</section>
+<section id="extraire-les-éléments-dun-vecteur-nommé-1" class="slide level2">
+<h2>✅Extraire les éléments d’un vecteur nommé</h2>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb124"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb124-1"><a href=""></a><span class="fu">names</span>(couleurs)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "rouge" "bleu" </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb126"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb126-1"><a href=""></a>couleurs[<span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>rouge 
+"red" </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb128"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb128-1"><a href=""></a>couleurs[<span class="st">"red"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;NA&gt; 
+  NA </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb130"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb130-1"><a href=""></a>couleurs[<span class="st">"rouge"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>rouge 
+"red" </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb132"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb132-1"><a href=""></a>couleurs[[<span class="dv">1</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "red"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb134"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb134-1"><a href=""></a>couleurs[[<span class="st">"rouge"</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "red"</code></pre>
+</div>
+</div>
+</section>
+<section id="liste" class="slide level2">
+<h2>❓Liste</h2>
+<p><br></p>
+<ul>
+<li><p>Objet à <strong>une dimension</strong></p></li>
+<li><p>Peut contenir des éléments de <strong>différents types</strong></p></li>
+</ul>
+</section>
+<section id="créer-une-liste" class="slide level2">
+<h2>🫵Créer une liste</h2>
+<p><br></p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>nombres &lt;- 1:10</code></p></li>
+<li><p><code>lettres &lt;- c("a", "b", "c")</code></p></li>
+<li><p><code>(liste_1 &lt;- list(nombres, lettres))</code></p></li>
+<li><p><code>(liste_2 &lt;- list(nombres = nombres, lettres = lettres)</code></p></li>
+</ul>
+<p><strong>Quelle est la différence entre <code>liste_1</code> et <code>liste_2</code> ?</strong></p>
+</section>
+<section id="créer-une-liste-1" class="slide level2">
+<h2>✅Créer une liste</h2>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb136"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb136-1"><a href=""></a>nombres <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span>
+<span id="cb136-2"><a href=""></a>lettres <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb137"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb137-1"><a href=""></a>(liste_1 <span class="ot">&lt;-</span> <span class="fu">list</span>(nombres, lettres))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[1]]
+ [1]  1  2  3  4  5  6  7  8  9 10
+
+[[2]]
+[1] "a" "b" "c"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb139"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb139-1"><a href=""></a>(liste_2 <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">nombres =</span> nombres, <span class="at">lettres =</span> lettres))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$nombres
+ [1]  1  2  3  4  5  6  7  8  9 10
+
+$lettres
+[1] "a" "b" "c"</code></pre>
+</div>
+</div>
+</section>
+<section id="accéder-aux-éléments-dune-liste" class="slide level2">
+<h2>🫵Accéder aux éléments d’une liste</h2>
+<p><br></p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>liste_1[1]</code></p></li>
+<li><p><code>liste_1[[1]]</code></p></li>
+<li><p><code>liste_1[[1]][4]</code></p></li>
+</ul>
+</section>
+<section id="accéder-aux-éléments-dune-liste-1" class="slide level2">
+<h2>✅Accéder aux éléments d’une liste</h2>
+<p><br></p>
+
+<img data-src="img/r_intro_15g.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="accéder-aux-éléments-dune-liste-2" class="slide level2">
+<h2>🫵Accéder aux éléments d’une liste</h2>
+<p><br></p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>liste_2[2]</code></p></li>
+<li><p><code>liste_2$lettres</code></p></li>
+<li><p><code>liste_2$lettres[-3]</code></p></li>
+</ul>
+</section>
+<section id="accéder-aux-éléments-dune-liste-3" class="slide level2">
+<h2>✅Accéder aux éléments d’une liste</h2>
+<p><br></p>
+
+<img data-src="img/r_intro_15h.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="description-dune-liste" class="slide level2">
+<h2>🫵Description d’une liste</h2>
+<p><br></p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>str(liste_1)</code></p></li>
+<li><p><code>str(liste_2)</code></p></li>
+<li><p><code>summary(liste_1)</code></p></li>
+<li><p><code>summary(liste_2)</code></p></li>
+</ul>
+<p><strong>Que remarquez-vous ?</strong></p>
+</section>
+<section id="description-dune-liste-1" class="slide level2">
+<h2>✅Description d’une liste</h2>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb141"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb141-1"><a href=""></a><span class="fu">str</span>(liste_1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>List of 2
+ $ : int [1:10] 1 2 3 4 5 6 7 8 9 10
+ $ : chr [1:3] "a" "b" "c"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb143"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb143-1"><a href=""></a><span class="fu">str</span>(liste_2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>List of 2
+ $ nombres: int [1:10] 1 2 3 4 5 6 7 8 9 10
+ $ lettres: chr [1:3] "a" "b" "c"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb145"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb145-1"><a href=""></a><span class="fu">summary</span>(liste_1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     Length Class  Mode     
+[1,] 10     -none- numeric  
+[2,]  3     -none- character</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb147"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb147-1"><a href=""></a><span class="fu">summary</span>(liste_2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        Length Class  Mode     
+nombres 10     -none- numeric  
+lettres  3     -none- character</code></pre>
+</div>
+</div>
+</section>
+<section id="la-fonction-lapply" class="slide level2">
+<h2>🫵La fonction <code>lapply()</code></h2>
+<p><br></p>
+<p>La fonction <code>lapply()</code> permet d’appliquer (<em>apply</em>) une fonction à l’ensemble des éléments d’une liste (<u><em>l</em></u><em>ist</em>).</p>
+<p>Dans la console, taper et exécuter les commandes suivantes :</p>
+<ul>
+<li><p><code>lapply(X = liste_1, FUN = length)</code></p></li>
+<li><p><code>lapply(X = liste_1, FUN = mean)</code></p></li>
+<li><p><code>lapply(liste_1, summary)</code></p></li>
+</ul>
+<p><strong>Que remarquez-vous ?</strong></p>
+</section>
+<section id="la-fonction-lapply-1" class="slide level2">
+<h2>✅La fonction <code>lapply()</code></h2>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb149"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb149-1"><a href=""></a><span class="fu">lapply</span>(<span class="at">X =</span> liste_1, <span class="at">FUN =</span> length)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[1]]
+[1] 10
+
+[[2]]
+[1] 3</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb151"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb151-1"><a href=""></a><span class="fu">lapply</span>(<span class="at">X =</span> liste_1, <span class="at">FUN =</span> mean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[1]]
+[1] 5.5
+
+[[2]]
+[1] NA</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb153"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb153-1"><a href=""></a><span class="fu">lapply</span>(liste_2, summary)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$nombres
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   1.00    3.25    5.50    5.50    7.75   10.00 
+
+$lettres
+   Length     Class      Mode 
+        3 character character </code></pre>
+</div>
+</div>
+<ul>
+<li><p><code>class()</code></p></li>
+<li><p><code>mode()</code></p></li>
+<li><p><code>length()</code></p></li>
+<li><p><code>lengths()</code></p></li>
+<li><p><code>names()</code></p></li>
+<li><p><code>attributes()</code></p></li>
+</ul>
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
