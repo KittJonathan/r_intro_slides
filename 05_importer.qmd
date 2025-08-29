@@ -209,6 +209,14 @@ Toutes les opérations effectuées jusqu'ici ont fait appel à des fonctions :
 
 ![](img/r_intro_13c.png){fig-align="center"}
 
+💡L'assignation peut également se faire à l'aide de l'opérateur `=`.
+
+::: {.callout-tip appearance="simple" icon="false"}
+#### ⌨️Insérer une flèche d'assignation
+
+`Alt` + `-`
+:::
+
 ## ❓Language orienté objet
 
 <br>
@@ -402,11 +410,17 @@ Le chemin indique l'emplacement d'un fichier ou d'un dossier dans un système de
 
 Dans l'appel à la fonction `read.csv()`, remplacer le chemin absolu (utilisé par défaut lors de l'importation du fichier telle que nous l'avons effectuée) par le chemin relatif.
 
-![](img/r_intro_13n.png){fig-align="center"}
+<br>
 
 ::: {.callout-important appearance="simple"}
 #### Pensez à sauvegarder régulièrement votre script !
 :::
+
+## ✅Modifier le script - chemin relatif
+
+<br>
+
+![](img/r_intro_13n.png){fig-align="center"}
 
 ## 🫵Exécuter le code
 
